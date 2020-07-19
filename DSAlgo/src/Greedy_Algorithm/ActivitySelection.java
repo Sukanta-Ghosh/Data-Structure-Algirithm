@@ -6,7 +6,6 @@ import java.io.*;
 class Activities implements Comparable<Activities>{
         Integer start;
         Integer finish;
-        //Sorting in ascending order
         public int compareTo(Activities o){
             return finish.compareTo(o.finish);
         }
