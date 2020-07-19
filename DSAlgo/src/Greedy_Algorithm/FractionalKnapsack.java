@@ -10,7 +10,7 @@ class FractionalKnapsack
         public Items(int val, int wt){
             this.val = val;
             this.wt = wt;
-            cost = new Double(val / wt); 
+            cost = (double) (val / wt); 
         }
     }
     
