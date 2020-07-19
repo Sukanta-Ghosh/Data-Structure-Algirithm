@@ -2,7 +2,7 @@ package Linked_List;
 
 public class InsertingNode {
 	class Node
-	{
+	{ 
 		Node next;
 		int data;
 		Node(int d)

@@ -1,7 +1,7 @@
 package Greedy_Algorithm;
 
 import java.util.*;
-
+ 
 class Job implements Comparable<Job>{
     Integer id;
     Integer deadline;

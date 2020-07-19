@@ -6,7 +6,7 @@ public class MirrorTree {
 	
 	Node root;
 	
-	Node mirrorRecursive(Node node) 
+	Node mirrorRecursive(Node node)  
     { 
         if (node == null) 
             return node; 

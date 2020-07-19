@@ -4,7 +4,7 @@ import java.util.*;
 
 public class LeftRightViewOfBinaryTree {
 	
-	Node root;
+	Node root; 
 	
 	/* Recursive Approach */
 	int maxLevel = 0;

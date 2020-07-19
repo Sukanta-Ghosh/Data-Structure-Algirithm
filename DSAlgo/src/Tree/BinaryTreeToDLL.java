@@ -2,7 +2,7 @@ package Tree;
 
 public class BinaryTreeToDLL {
 	
-	Node prev = null;
+	Node prev = null; 
 	Node head;
 	
 	/* Left to Right */

@@ -1,7 +1,7 @@
 package Tree;
 
 public class FloorCeilInBST {
-	
+	 
 	Node floorIte(Node root, int x) {
 		
 		Node floor = null;

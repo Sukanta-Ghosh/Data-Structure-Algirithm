@@ -1,5 +1,5 @@
 package Tree;
-
+ 
 public class LowestCommonAncestorBST 
 { 
 	// Root of the Binary Tree 

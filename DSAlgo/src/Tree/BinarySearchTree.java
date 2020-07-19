@@ -2,7 +2,7 @@ package Tree;
 
 public class BinarySearchTree {
 	
-	Node root;
+	Node root; 
 	
 	/* Recursive Approach */
 	boolean searchRec(Node root, int x) {

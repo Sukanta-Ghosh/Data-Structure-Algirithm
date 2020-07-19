@@ -1,10 +1,10 @@
 package Tree;
 
-import java.util.*;
+import java.util.*; 
 
 public class TreeByPostorderAndInorder {
 	
-	public int postIndex = 0;    
+	public int postIndex = 0;      
     public Node buildTreeUtil(int ino[], int post[], int start, int end, 
     		HashMap<Integer, Integer> map){
         

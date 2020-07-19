@@ -1,7 +1,7 @@
 package Tree;
 
 import java.util.Stack;
-
+ 
 /*Leaf nodes are those, which have no left child and right child*/
 public class CountingLeaves {
 	

@@ -2,9 +2,9 @@ package Tree;
 
 import java.util.*;
 
-public class TreeByPreorderAndInorder {
+public class TreeByPreorderAndInorder { 
 	
-	public int preIndex = 0;    
+	public int preIndex = 0;     
     public Node buildTreeUtil(int in[], int pre[], int start, int end, 
     		HashMap<Integer, Integer> map){
         

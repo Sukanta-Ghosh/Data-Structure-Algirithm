@@ -3,7 +3,7 @@ package Tree;
 //Java program for different tree traversals 
 
 /* Class containing left and right child of current 
-node and key value*/
+node and key value*/ 
 class TreeTraversalsRecursive 
 { 
 	// Root of Binary Tree 

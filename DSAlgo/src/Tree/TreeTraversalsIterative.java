@@ -3,7 +3,7 @@ package Tree;
 import java.util.*;
 
 public class TreeTraversalsIterative {
-	Node root; 
+	Node root;  
 	
 	// An iterative process to print InOrder traversal of Binary tree 
     void inorder() 
