@@ -6,7 +6,7 @@ class Job implements Comparable<Job>{
     Integer id;
     Integer deadline;
     Integer profit;
-    
+    //Sorting in ascending order
     public int compareTo(Job o){
         return this.profit.compareTo(o.profit);
     }
