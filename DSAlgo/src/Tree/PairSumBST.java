@@ -30,6 +30,65 @@ public class PairSumBST {
 		return isPairSumUtil(root, sum, set);
 	}
 	
+	/* Check for Triplet Sum */
+	boolean checkForTriplet(Node root, int sum) 
+	{ 
+	    // Vector to store the inorder traversal 
+	    // of the BST 
+	    Vector<Integer> vec = new Vector<Integer>(); 
+	  
+	    // Call inorder() to do the inorder 
+	    // on the BST and store it in vec 
+	    inorder(root, vec); 
+	  
+	    // Now, check if any triplet with given sum 
+	    // exists in the BST or not 
+	    int l, r; 
+	  
+	    // Now fix the first element one by one  
+	    // and find the other two elements 
+	    for (int i = 0; i < vec.size() - 2; i++) 
+	    { 
+	  
+	        // To find the other two elements,  
+	        // start two index variables from two corners  
+	        // of the array and move them toward each other 
+	        l = i + 1; // index of the first element in the 
+	                   // remaining elements 
+	  
+	        // index of the last element 
+	        r = vec.size() - 1; 
+	        while (l < r)  
+	        { 
+	            if (vec.get(i) +  
+	                vec.get(l) + vec.get(r) == sum)  
+	            { 
+	                return true; 
+	            } 
+	            else if (vec.get(i) +  
+	                     vec.get(l) + vec.get(r) < sum) 
+	                l++; 
+	            else // vec[i] + vec[l] + vec[r] > sum 
+	                r--; 
+	        } 
+	    } 
+	  
+	    // If we reach here,  
+	    // then no triplet was found 
+	    return false; 
+	} 
+	
+	void inorder(Node root,  
+            Vector<Integer> vec) 
+	{ 
+		if (root != null) 
+		{ 
+			inorder(root.left, vec); 
+			vec.add(root.key); 
+			inorder(root.right, vec); 
+		} 
+	} 
+	
 	/* Recursive Approach */
 	Node insertRec(Node root, int x) {
 		
@@ -65,7 +124,8 @@ public class PairSumBST {
         tree.insert(16); 
         tree.insert(40);  
 
-        System.out.println(tree.isPairSum(21)); 
+        System.out.println(tree.isPairSum(21));
+        System.out.println(tree.checkForTriplet(tree.root, 35)); 
         
     } 
 }
