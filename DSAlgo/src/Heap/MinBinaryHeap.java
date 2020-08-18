@@ -25,9 +25,8 @@ public class MinBinaryHeap{
 		
 		size++;
 		arr[size - 1] = x;
-		for(int i = size - 1; i != 0 && arr[parent(i)] > arr[i]; i = parent(i)) {
+		for(int i = size - 1; i != 0 && arr[parent(i)] > arr[i]; i = parent(i)){
 			swap(i, parent(i));	
-			//i = parent(i);
 		}
 	}
 	
@@ -111,6 +110,14 @@ public class MinBinaryHeap{
 		for(int i = 0; i < size; i++)
 			System.out.print(arr[i]+" ");
 		System.out.println();
+	}
+	
+	void height() {
+		
+		//Height = ceil(log2(N+1)) – 1
+		int h = (int)Math.ceil(Math.log(size +  1) / Math.log(2)) - 1;
+		
+		System.out.println(h);
 	}
 	
 	public static void main(String[] args) {

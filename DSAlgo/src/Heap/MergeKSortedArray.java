@@ -6,7 +6,9 @@ public class MergeKSortedArray {
 	
 	class Triplet implements Comparable<Triplet>{
 		
-		int val, aPos, vPos;
+		int val; 
+		int aPos;	// Array Position b/w k arrays
+		int vPos;	// Val position in a array
 		Triplet(int v, int ap, int vp){
 			val = v;
 			aPos = ap;
