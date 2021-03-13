@@ -41,7 +41,7 @@ public class TrappingRainWater {
 		for(int i = n - 2; i >= 0; i--)
 			rmax[i] = Math.max(arr[i], rmax[i + 1]);
 		
-		for(int i = 1; i < n; i++)
+		for(int i = 1; i < n - 1; i++)
 			res += Math.min(lmax[i], rmax[i]) - arr[i];
 		
 		return res;
