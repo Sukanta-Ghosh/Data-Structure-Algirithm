@@ -2,6 +2,7 @@ package String;
 
 public class Anagram {
 
+
     /*Efficient Soln
      * Time: O(n)
      * Space: O(CHAR)
@@ -37,4 +38,5 @@ public class Anagram {
         else
             System.out.println("The two strings are not" + " anagram of each other");
     }
+
 }
