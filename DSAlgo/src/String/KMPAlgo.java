@@ -6,6 +6,7 @@ public class KMPAlgo {
 
         int n = str.length(), len = 0;
         lps[0] = 0;
+        
         int i = 1;
         while (i < n) {
             if (str.charAt(i) == str.charAt(len)) {
@@ -20,14 +21,16 @@ public class KMPAlgo {
                     len = lps[len - 1];
                 }
             }
-        }
+        }                
     }
 
     static void KMP(String pat, String txt) {
         int N = txt.length();
         int M = pat.length();
+        
         int[] lps = new int[M];
         fillLPS(pat, lps);
+        
         int i = 0, j = 0;
         while (i < N) {
             if (pat.charAt(j) == txt.charAt(i)) {
@@ -48,7 +51,9 @@ public class KMPAlgo {
     }
 
     public static void main(String args[]) {
-        String txt = "ababcababaad", pat = "ababa";
+        String txt = "ababcababaad"; 
+        String pat = "ababa";
+        
         KMP(pat, txt);
     }
 }

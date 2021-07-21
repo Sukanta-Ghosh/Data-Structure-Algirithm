@@ -54,7 +54,7 @@ public class PatternSearching {
     }
 
     /*
-     * Improved Naive Solution for Distinct 
+     * Improved Naive Solution for only Distinct 
      * Time: O(n)
      */
     public static void betterNaiveMethod(String str, String pat) {

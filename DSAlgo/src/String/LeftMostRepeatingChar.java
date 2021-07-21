@@ -27,7 +27,9 @@ public class LeftMostRepeatingChar {
     }
 
     /*
-     * Efficient Solution 1 Time: O(n) Space: O(1)
+     * Efficient Solution 1 
+     * Time: O(n) 
+     * Space: O(1)
      */
     public static int leftmost(String str) {
         int[] fIndex = new int[CHAR];
