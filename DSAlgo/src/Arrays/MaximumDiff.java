@@ -1,5 +1,8 @@
 package Arrays;
 
+/* Practise Link 
+https://www.geeksforgeeks.org/maximum-difference-between-two-elements/ */
+
 public class MaximumDiff {
 
 //	Method 1 : Naive

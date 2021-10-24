@@ -1,5 +1,8 @@
 package Arrays;
 
+/* Practise Link
+https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1 */
+
 public class TrappingRainWater {
 	
 //	Method 1 : Naive
@@ -26,7 +29,7 @@ public class TrappingRainWater {
 //	Method 2 : Efficient
 //	Time Complexity: O(n)
 //	Auxiliary Space: O(n) 	
-	int getrWaterEffic(int[] arr, int n) {
+	int getWaterEffic(int[] arr, int n) {
 		
 		int res = 0;
 		
@@ -54,6 +57,6 @@ public class TrappingRainWater {
 		int n = arr.length;
 		
 		TrappingRainWater obj = new TrappingRainWater();
-		System.out.println(obj.getrWaterEffic(arr, n));
+		System.out.println(obj.getWaterEffic(arr, n));
 	}
 }

@@ -1,5 +1,8 @@
 package Arrays;
 
+/* Practise Link
+https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1 */
+
 public class StockBuySell {
 	
 //	Method 1 : Naive

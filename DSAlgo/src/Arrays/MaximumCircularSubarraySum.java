@@ -1,5 +1,8 @@
 package Arrays;
 
+/* Practise Link 
+https://practice.geeksforgeeks.org/problems/max-circular-subarray-sum-1587115620/1 */
+
 public class MaximumCircularSubarraySum {
 	
 //	Method 1 : Naive
@@ -41,6 +44,7 @@ public class MaximumCircularSubarraySum {
 		return Math.max(maxNormal, maxCircular);
 	}
 	
+	//Kadane's Algorithm
 	int normalMaxSum(int[] arr, int n) {
 		
 		int res = 0;

@@ -1,5 +1,8 @@
 package Arrays;
 
+/* Practise Link 
+https://practice.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1 */
+
 public class ZeroToEnd {
 
 //	Method 1 : Naive
