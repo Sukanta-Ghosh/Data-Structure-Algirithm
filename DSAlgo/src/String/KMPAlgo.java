@@ -1,7 +1,11 @@
 package String;
 
+/* Question Link
+https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/ */
+
 public class KMPAlgo {
 
+    //Longest Proper Prefix Suffix
     static void fillLPS(String str, int lps[]) {
 
         int n = str.length(), len = 0;

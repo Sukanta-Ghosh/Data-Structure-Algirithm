@@ -1,5 +1,8 @@
 package String;
 
+/* Practise link 
+https://practice.geeksforgeeks.org/problems/check-for-subsequence4930/1 */
+
 public class SubsequenceString {
 	
 	/*Iterative Solution
@@ -7,9 +10,9 @@ public class SubsequenceString {
 	 * Time: O(n+m)
 	 * Space: O(1)
 	 * */
-	static boolean isSubSeq(String s1, String s2) {
-		int n = s1.length();
-		int m = s2.length();
+	static boolean isSubSeq(String text, String pattern) {
+		int n = text.length();
+		int m = pattern.length();
 		
 		int j = 0;
 		for(int i = 0; i < n && j < m; i++) {

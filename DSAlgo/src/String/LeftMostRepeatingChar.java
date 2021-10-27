@@ -2,6 +2,8 @@ package String;
 
 import java.util.Arrays;
 
+/* Question Statement: Print the leftmost repeating character in a String */
+
 public class LeftMostRepeatingChar {
 
     static final int CHAR = 256;
@@ -34,7 +36,9 @@ public class LeftMostRepeatingChar {
     public static int leftmost(String str) {
         int[] fIndex = new int[CHAR];
         Arrays.fill(fIndex, -1);
+
         int res = Integer.MAX_VALUE;
+
         for (int i = 0; i < str.length(); i++) {
             int fi = fIndex[str.charAt(i)];
             if (fi == -1) {
