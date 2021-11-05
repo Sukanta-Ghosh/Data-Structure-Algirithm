@@ -8,6 +8,13 @@ public class LeftMostRepeatingChar {
 
     static final int CHAR = 256;
 
+    public static void main(String[] args) {
+        String str = "abccbd";
+        System.out.println("Char is: " + str.charAt(leftmost(str)));
+        System.out.println("Char is: " + str.charAt(leftMost(str)));
+
+    }
+
     /*
      * Efficient Solution 2 
      * Time: O(n) 
@@ -51,10 +58,4 @@ public class LeftMostRepeatingChar {
         return (res == Integer.MAX_VALUE) ? -1 : res;
     }
 
-    public static void main(String[] args) {
-        String str = "abccbd";
-        System.out.println("Char is: " + str.charAt(leftmost(str)));
-        System.out.println("Char is: " + str.charAt(leftMost(str)));
-
-    }
 }
