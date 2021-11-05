@@ -43,15 +43,7 @@ public class PatternSearching {
             }
         }
 
-    }
-
-    /* Check if Strings are Rotations
-     * */
-    static boolean areRotations(String s1, String s2) {
-        if (s1.length() != s2.length())
-            return false;
-        return ((s1 + s1).indexOf(s2) >= 0);
-    }
+    }   
 
     /*
      * Improved Naive Solution for only Distinct 
@@ -116,5 +108,13 @@ public class PatternSearching {
 
         naiveMethod(str3, pattern3);
         betterNaiveMethod(str2, pattern2);
+    }
+
+    /* Check if Strings are Rotations
+     * */
+    static boolean areRotations(String s1, String s2) {
+        if (s1.length() != s2.length())
+            return false;
+        return ((s1 + s1).indexOf(s2) >= 0);
     }
 }

@@ -1,32 +1,14 @@
 package Arrays;
 
+/* Practise Link
+https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1 */
+
 public class TrappingRainWater {
-	
-//	Method 1 : Naive
-//	Time Complexity: O(n^2)
-//	Auxiliary Space: O(1)	
-	int getWaterNaive(int[] arr, int n) {
-		
-		int res = 0;
-		for(int i = 1; i < n - 1; i++) {
-			
-			int lmax = arr[i];
-			for(int j = 0; j < i; j++)
-				lmax = Math.max(lmax, arr[i]);
-			
-			int rmax = arr[i];
-			for(int j = i + 1; j < n; j++)
-				rmax = Math.max(rmax, arr[i]);
-			
-			res += Math.min(lmax, rmax) - arr[i];
-		}
-		return res;
-	}
-	
-//	Method 2 : Efficient
-//	Time Complexity: O(n)
-//	Auxiliary Space: O(n) 	
-	int getrWaterEffic(int[] arr, int n) {
+
+	//	Method 2 : Efficient
+	//	Time Complexity: O(n)
+	//	Auxiliary Space: O(n) 	
+	int getWaterEffic(int[] arr, int n) {
 		
 		int res = 0;
 		
@@ -54,6 +36,27 @@ public class TrappingRainWater {
 		int n = arr.length;
 		
 		TrappingRainWater obj = new TrappingRainWater();
-		System.out.println(obj.getrWaterEffic(arr, n));
+		System.out.println(obj.getWaterEffic(arr, n));
+	}
+	
+	//Method 1 : Naive
+	//Time Complexity: O(n^2)
+	//Auxiliary Space: O(1)	
+	int getWaterNaive(int[] arr, int n) {
+		
+		int res = 0;
+		for(int i = 1; i < n - 1; i++) {
+			
+			int lmax = arr[i];
+			for(int j = 0; j < i; j++)
+				lmax = Math.max(lmax, arr[i]);
+			
+			int rmax = arr[i];
+			for(int j = i + 1; j < n; j++)
+				rmax = Math.max(rmax, arr[i]);
+			
+			res += Math.min(lmax, rmax) - arr[i];
+		}
+		return res;
 	}
 }

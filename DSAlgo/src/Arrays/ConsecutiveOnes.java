@@ -1,5 +1,8 @@
 package Arrays;
 
+/* Parctise Link
+https://leetcode.com/problems/max-consecutive-ones/ */
+
 public class ConsecutiveOnes {
 
 //	Method 1 : Naive
@@ -24,7 +27,7 @@ public class ConsecutiveOnes {
 //	Method 2 : Efficient
 //	Time Complexity: O(n)
 //	Auxiliary Space: O(1) 	
-	int maxOnesEffic(int[] arr, int n) {
+	int maxOnesEfficient(int[] arr, int n) {
 		
 		int res = 0;
 		int count = 0;
@@ -46,6 +49,6 @@ public class ConsecutiveOnes {
 		int n = arr.length;
 		
 		ConsecutiveOnes obj = new ConsecutiveOnes();
-		System.out.println(obj.maxOnesEffic(arr, n));
+		System.out.println(obj.maxOnesEfficient(arr, n));
 	}
 }
