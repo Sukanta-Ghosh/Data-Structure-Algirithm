@@ -1,4 +1,4 @@
-package String;
+package string;
 
 /* Practise Link 
 https://practice.geeksforgeeks.org/problems/rank-the-permutations2323/1 */

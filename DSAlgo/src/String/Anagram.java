@@ -1,15 +1,13 @@
-package String;
+package string;
 
 /* Practise Link
 https://practice.geeksforgeeks.org/problems/anagram-1587115620/1 */
 
 public class Anagram {
 
-
-    /*Efficient Soln
-     * Time: O(n)
-     * Space: O(CHAR)
-     * */
+    /*
+     * Efficient Soln Time: O(n) Space: O(CHAR)
+     */
     static final int CHAR = 256;
 
     static boolean areAnagram(String s1, String s2) {

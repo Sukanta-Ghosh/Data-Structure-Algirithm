@@ -1,4 +1,4 @@
-package String;
+package string;
 
 import java.util.Arrays;
 
@@ -16,11 +16,7 @@ public class LeftMostRepeatingChar {
     }
 
     /*
-     * Efficient Solution 2 
-     * Time: O(n) 
-     * Space: O(1)
-     */
-    public static int leftMost(String str) {
+     * Efficient Solution 2  lic static int leftMost(String str) {
         boolean[] visited = new boolean[CHAR];
         int res = -1;
 
@@ -36,13 +32,9 @@ public class LeftMostRepeatingChar {
     }
 
     /*
-     * Efficient Solution 1 
-     * Time: O(n) 
-     * Space: O(1)
+     * Efficient Solution 1 Time: O(n) Space: O(1)
      */
-    public static int leftmost(String str) {
-        int[] fIndex = new int[CHAR];
-        Arrays.fill(fIndex, -1);
+    public static int leftm  int[] fIn  Arrays.fill(fIndex, -1);
 
         int res = Integer.MAX_VALUE;
 

@@ -1,4 +1,4 @@
-package String;
+package string;
 
 /* Practise Link 
 https://practice.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1 */
@@ -14,9 +14,9 @@ public class AnagramSearch {
         return true;
     }
 
-    /* Efficient Solution
-    Time Complexity: O(n) //CHAR constant
-    Space: O(CHAR) */
+    /*
+     * Efficient Solution Time Complexity: O(n) //CHAR constant Space: O(CHAR)
+     */
     static boolean isPresent(String txt, String pat) {
         int[] CT = new int[CHAR];
         int[] CP = new int[CHAR];

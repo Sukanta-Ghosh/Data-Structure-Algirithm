@@ -1,4 +1,4 @@
-package String;
+package string;
 
 /* Question Link
 https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/ */
@@ -6,19 +6,19 @@ https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/ */
 public class KMPAlgo {
 
     public static void main(String args[]) {
-        String txt = "ababcababaad"; 
+        String txt = "ababcababaad";
         String pat = "ababa";
-        
+
         KMP(pat, txt);
     }
 
     static void KMP(String pat, String txt) {
         int N = txt.length();
         int M = pat.length();
-        
+
         int[] lps = new int[M];
         fillLPS(pat, lps);
-        
+
         int i = 0, j = 0;
         while (i < N) {
             if (pat.charAt(j) == txt.charAt(i)) {
@@ -38,12 +38,12 @@ public class KMPAlgo {
         }
     }
 
-    //Longest Proper Prefix Suffix
+    // Longest Proper Prefix Suffix
     static void fillLPS(String str, int lps[]) {
 
         int n = str.length(), len = 0;
         lps[0] = 0;
-        
+
         int i = 1;
         while (i < n) {
             if (str.charAt(i) == str.charAt(len)) {
@@ -58,6 +58,6 @@ public class KMPAlgo {
                     len = lps[len - 1];
                 }
             }
-        }                
+        }
     }
 }
