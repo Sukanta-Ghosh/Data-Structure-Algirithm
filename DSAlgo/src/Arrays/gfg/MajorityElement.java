@@ -1,8 +1,21 @@
 package arrays.gfg;
 
-/* Practise Link: https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1 */
+/* 
+Practise Link: https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1 */
 
 public class MajorityElement {
+
+    /*
+     * Question Statement: Find the majority element in the array.A majority element
+     * in an array A of size N is an element that appears more than N/2 times in the
+     * array.
+     */
+    public static void main(String args[]) {
+        int arr[] = { 8, 8, 6, 6, 6, 4, 6 }, n = 7;
+
+        System.out.println(findMajority(arr, n)); // o/p: 3
+
+    }
 
     // Moore's Voting Algorithm
     // Time: O(n)
@@ -31,15 +44,9 @@ public class MajorityElement {
                 count++;
 
         if (count <= n / 2)
-            res = -1;
+            return -1;
 
-        return res;
+        return arr[res];
     }
 
-    public static void main(String args[]) {
-        int arr[] = { 8, 8, 6, 6, 6, 4, 6 }, n = 7;
-
-        System.out.println(findMajority(arr, n));
-
-    }
 }

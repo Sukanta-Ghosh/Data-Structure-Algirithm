@@ -6,7 +6,7 @@ https://practice.geeksforgeeks.org/problems/check-for-subsequence4930/1 */
 public class SubsequenceString {
 
 	/*
-	 * Iterative Solution Efficient Solution Time: O(n+m) Space: O(1)
+	 * Iterative Solution Efficient Solution || Time: O(n+m) || Space: O(1)
 	 */
 	static boolean isSubSeq(String text, String pattern) {
 		int n = text.length();
@@ -44,7 +44,7 @@ public class SubsequenceString {
 		int n = s1.length();
 		int m = s2.length();
 
-		isSubSeq(s1, s2);
-		isSubSeq(s1, s2, n, m);
+		System.out.println("Iterative: " + isSubSeq(s1, s2));
+		System.out.println("Recursive: " + isSubSeq(s1, s2, n, m));
 	}
 }

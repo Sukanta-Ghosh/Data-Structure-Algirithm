@@ -16,9 +16,11 @@ public class MaximumCircularSubarraySum {
 			return maxNormal;
 
 		/*
-		 * Circular Sum: For this we need to find Minimum sum subarray || Maximum sum in
-		 * a inverted array is equal to find minimum sum in a normal array, so instead
-		 * of subtracting we are adding the minimum sum
+		 * Circular Sum: For this we need to find Minimum sum subarray(which will be the
+		 * middle elements of the array) and subtract that sum from total array sum of
+		 * normal array || Maximum sum in a inverted array is equal to find minimum sum
+		 * in a normal array, so instead of subtracting we are adding the minimum sum
+		 * with total sum of the array
 		 */
 		int arraySum = 0;
 		for (int i = 0; i < n; i++) {

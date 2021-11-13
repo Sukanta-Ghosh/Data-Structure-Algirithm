@@ -6,8 +6,15 @@ https://practice.geeksforgeeks.org/problems/anagram-1587115620/1 */
 public class Anagram {
 
     /*
-     * Efficient Soln Time: O(n) Space: O(CHAR)
+     * Qs Statement: Check whether two given strings are an anagram of each other or
+     * not. An anagram of a string is another string that contains the same
+     * characters, only the order of characters can be different. For example,“act”
+     * and “tac” are an anagram of each other.
      */
+
+    // Efficient Soln
+    // Time: O(n)
+    // Space: O(CHAR)
     static final int CHAR = 256;
 
     static boolean areAnagram(String s1, String s2) {

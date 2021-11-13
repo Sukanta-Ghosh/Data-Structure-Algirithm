@@ -11,7 +11,7 @@ Q3. Find the longest Subarray with equal 0's and 1's
 public class PrefixSum {
 
     /**
-     * Prefix Sum Array Application 1
+     * Prefix Sum Array // Application 1 // Time: O(n)
      */
     static int[] preSum(int arr[], int n) {
 
@@ -48,13 +48,14 @@ public class PrefixSum {
         }
 
         // Check every point if it is Equilibrium point or not
-        int l_sum = 0;
+        int leftSideSum = 0;
         for (int i = 0; i < n; i++) {
-            if (l_sum == sum - arr[i])
+            if (leftSideSum == sum - arr[i])
                 return true;
 
-            l_sum += arr[i];
+            leftSideSum += arr[i];
 
+            // Here sum var will act as rightSideSum
             sum -= arr[i];
         }
 

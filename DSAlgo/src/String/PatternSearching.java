@@ -5,9 +5,15 @@ public class PatternSearching {
     static final int d = 256;
     static final int q = 101;
 
-    /*
-     * Not Understand Rabin Karp Algorithm
-     */
+    // Check if Strings are Rotations
+    static boolean areRotations(String s1, String s2) {
+        if (s1.length() != s2.length())
+            return false;
+        return ((s1 + s1).indexOf(s2) >= 0);
+    }
+
+    // Action: Not Understand
+    // Rabin Karp Algorithm
     static void RabinKarpAlgo(String pat, String txt, int M, int N) {
 
         // Compute (d^(M-1))%q
@@ -45,7 +51,7 @@ public class PatternSearching {
     }
 
     /*
-     * Improved Naive Solution for only Distinct Time: O(n)
+     * Improved Naive Solution for only Distinct // Time: O(n)
      */
     public static void betterNaiveMethod(String str, String pat) {
 
@@ -74,7 +80,7 @@ public class PatternSearching {
     }
 
     /*
-     * Naive Solution Time: O((n - m + 1) * m)
+     * Naive Solution // Time: O((n - m + 1) * m)
      */
     public static void naiveMethod(String str, String pat) {
 
@@ -107,12 +113,4 @@ public class PatternSearching {
         betterNaiveMethod(str2, pattern2);
     }
 
-    /*
-     * Check if Strings are Rotations
-     */
-    static boolean areRotations(String s1, String s2) {
-        if (s1.length() != s2.length())
-            return false;
-        return ((s1 + s1).indexOf(s2) >= 0);
-    }
 }

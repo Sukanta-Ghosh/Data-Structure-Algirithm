@@ -1,938 +1,1015 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch ConsecutiveOnes",
-            "request": "launch",
-            "mainClass": "Arrays.ConsecutiveOnes",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeadersInArray",
-            "request": "launch",
-            "mainClass": "Arrays.LeadersInArray",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeftRotateByd",
-            "request": "launch",
-            "mainClass": "Arrays.LeftRotateByd",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumCircularSubarraySum",
-            "request": "launch",
-            "mainClass": "Arrays.MaximumCircularSubarraySum",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumDiff",
-            "request": "launch",
-            "mainClass": "Arrays.MaximumDiff",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumSubarraySum",
-            "request": "launch",
-            "mainClass": "Arrays.MaximumSubarraySum",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch StockBuySell",
-            "request": "launch",
-            "mainClass": "Arrays.StockBuySell",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch TrappingRainWater",
-            "request": "launch",
-            "mainClass": "Arrays.TrappingRainWater",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch ZeroToEnd",
-            "request": "launch",
-            "mainClass": "Arrays.ZeroToEnd",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MedianOfTwoSortedArrayOfDifferentLength",
-            "request": "launch",
-            "mainClass": "BinarySearch.MedianOfTwoSortedArrayOfDifferentLength",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch KaratsubaAlgorithm",
-            "request": "launch",
-            "mainClass": "Divide_Conquer.KaratsubaAlgorithm",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch BooleanParenthesization",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.BooleanParenthesization",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch EggDropping",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.EggDropping",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LongestCommonSubsequence",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.LongestCommonSubsequence",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LongestPalindromicSubsequence",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.LongestPalindromicSubsequence",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LongestRepeatingSubsequence",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.LongestRepeatingSubsequence",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MatrixChainMultiplication",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.MatrixChainMultiplication",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MinimumInsertionDeletion",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.MinimumInsertionDeletion",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch PalindromicPartitioning",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.PalindromicPartitioning",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch SubsetSum",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.SubsetSum",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch ActivitySelection",
-            "request": "launch",
-            "mainClass": "Greedy_Algorithm.ActivitySelection",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch FractionalKnapsack",
-            "request": "launch",
-            "mainClass": "Greedy_Algorithm.FractionalKnapsack",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch JobSequencing",
-            "request": "launch",
-            "mainClass": "Greedy_Algorithm.JobSequencing",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch FourSumNumbers",
-            "request": "launch",
-            "mainClass": "Hashing.FourSumNumbers",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch HeapSort",
-            "request": "launch",
-            "mainClass": "Heap.HeapSort",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch KLargestElements",
-            "request": "launch",
-            "mainClass": "Heap.KLargestElements",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch KSortedArray",
-            "request": "launch",
-            "mainClass": "Heap.KSortedArray",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MedianOfStream",
-            "request": "launch",
-            "mainClass": "Heap.MedianOfStream",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MergeKSortedArray",
-            "request": "launch",
-            "mainClass": "Heap.MergeKSortedArray",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MinBinaryHeap",
-            "request": "launch",
-            "mainClass": "Heap.MinBinaryHeap",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch CatalanNumber",
-            "request": "launch",
-            "mainClass": "Number_Theory.CatalanNumber",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckForPrime",
-            "request": "launch",
-            "mainClass": "Number_Theory.CheckForPrime",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch GCDandLCM",
-            "request": "launch",
-            "mainClass": "Number_Theory.GCDandLCM",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch PrimeFactors",
-            "request": "launch",
-            "mainClass": "Number_Theory.PrimeFactors",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch SieveOfEratosthenes",
-            "request": "launch",
-            "mainClass": "Number_Theory.SieveOfEratosthenes",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch Anagram",
-            "request": "launch",
-            "mainClass": "String.Anagram",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch AnagramSearch",
-            "request": "launch",
-            "mainClass": "String.AnagramSearch",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch KMPAlgo",
-            "request": "launch",
-            "mainClass": "String.KMPAlgo",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeftMostRepeatingChar",
-            "request": "launch",
-            "mainClass": "String.LeftMostRepeatingChar",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LexicographicRank_String",
-            "request": "launch",
-            "mainClass": "String.LexicographicRank_String",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch PatternSearching",
-            "request": "launch",
-            "mainClass": "String.PatternSearching",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch SubsequenceString",
-            "request": "launch",
-            "mainClass": "String.SubsequenceString",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch BinarySearchTree",
-            "request": "launch",
-            "mainClass": "Tree.BinarySearchTree",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckBST",
-            "request": "launch",
-            "mainClass": "Tree.CheckBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckBalancedTree",
-            "request": "launch",
-            "mainClass": "Tree.CheckBalancedTree",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckPreorderArrayIsBST",
-            "request": "launch",
-            "mainClass": "Tree.CheckPreorderArrayIsBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch ChildrenSumProperty",
-            "request": "launch",
-            "mainClass": "Tree.ChildrenSumProperty",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch CountingLeaves",
-            "request": "launch",
-            "mainClass": "Tree.CountingLeaves",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch DiameterOfBinaryTree",
-            "request": "launch",
-            "mainClass": "Tree.DiameterOfBinaryTree",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch KthSamllestEleInBST",
-            "request": "launch",
-            "mainClass": "Tree.KthSamllestEleInBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LargestBSTinBinaryTree",
-            "request": "launch",
-            "mainClass": "Tree.LargestBSTinBinaryTree",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeafNodesFromPreorder",
-            "request": "launch",
-            "mainClass": "Tree.LeafNodesFromPreorder",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeftRightViewOfBinaryTree",
-            "request": "launch",
-            "mainClass": "Tree.LeftRightViewOfBinaryTree",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LowestCommonAncestorBST",
-            "request": "launch",
-            "mainClass": "Tree.LowestCommonAncestorBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch LowestCommonAncestorBinaryTree",
-            "request": "launch",
-            "mainClass": "Tree.LowestCommonAncestorBinaryTree",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumPathSum",
-            "request": "launch",
-            "mainClass": "Tree.MaximumPathSum",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MergeTwoBSTs",
-            "request": "launch",
-            "mainClass": "Tree.MergeTwoBSTs",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch MorrisTraversal",
-            "request": "launch",
-            "mainClass": "Tree.MorrisTraversal",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch PairSumBST",
-            "request": "launch",
-            "mainClass": "Tree.PairSumBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch PreorderToPostorderBST",
-            "request": "launch",
-            "mainClass": "Tree.PreorderToPostorderBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeByPostorderAndInorder",
-            "request": "launch",
-            "mainClass": "Tree.TreeByPostorderAndInorder",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeByPreorderAndInorder",
-            "request": "launch",
-            "mainClass": "Tree.TreeByPreorderAndInorder",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeTraversalsIterative",
-            "request": "launch",
-            "mainClass": "Tree.TreeTraversalsIterative",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeTraversalsRecursive",
-            "request": "launch",
-            "mainClass": "Tree.TreeTraversalsRecursive",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch TwoNodesSwapBST",
-            "request": "launch",
-            "mainClass": "Tree.TwoNodesSwapBST",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch UniqueBSTs",
-            "request": "launch",
-            "mainClass": "Tree.UniqueBSTs",
-            "projectName": "Competitive-Programming"
-        },
-        {
-            "type": "java",
-            "name": "Launch ConsecutiveOnes(1)",
-            "request": "launch",
-            "mainClass": "Arrays.ConsecutiveOnes",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeadersInArray(1)",
-            "request": "launch",
-            "mainClass": "Arrays.LeadersInArray",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeftRotateByd(1)",
-            "request": "launch",
-            "mainClass": "Arrays.LeftRotateByd",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumCircularSubarraySum(1)",
-            "request": "launch",
-            "mainClass": "Arrays.MaximumCircularSubarraySum",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumDiff(1)",
-            "request": "launch",
-            "mainClass": "Arrays.MaximumDiff",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumSubarraySum(1)",
-            "request": "launch",
-            "mainClass": "Arrays.MaximumSubarraySum",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch StockBuySell(1)",
-            "request": "launch",
-            "mainClass": "Arrays.StockBuySell",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch TrappingRainWater(1)",
-            "request": "launch",
-            "mainClass": "Arrays.TrappingRainWater",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch ZeroToEnd(1)",
-            "request": "launch",
-            "mainClass": "Arrays.ZeroToEnd",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MedianOfTwoSortedArrayOfDifferentLength(1)",
-            "request": "launch",
-            "mainClass": "BinarySearch.MedianOfTwoSortedArrayOfDifferentLength",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch KaratsubaAlgorithm(1)",
-            "request": "launch",
-            "mainClass": "Divide_Conquer.KaratsubaAlgorithm",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch BooleanParenthesization(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.BooleanParenthesization",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch EggDropping(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.EggDropping",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LongestCommonSubsequence(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.LongestCommonSubsequence",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LongestPalindromicSubsequence(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.LongestPalindromicSubsequence",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LongestRepeatingSubsequence(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.LongestRepeatingSubsequence",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MatrixChainMultiplication(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.MatrixChainMultiplication",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MinimumInsertionDeletion(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.MinimumInsertionDeletion",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch PalindromicPartitioning(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.PalindromicPartitioning",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch SubsetSum(1)",
-            "request": "launch",
-            "mainClass": "Dynamic_Programming.SubsetSum",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch ActivitySelection(1)",
-            "request": "launch",
-            "mainClass": "Greedy_Algorithm.ActivitySelection",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch FractionalKnapsack(1)",
-            "request": "launch",
-            "mainClass": "Greedy_Algorithm.FractionalKnapsack",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch JobSequencing(1)",
-            "request": "launch",
-            "mainClass": "Greedy_Algorithm.JobSequencing",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch FourSumNumbers(1)",
-            "request": "launch",
-            "mainClass": "Hashing.FourSumNumbers",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch HeapSort(1)",
-            "request": "launch",
-            "mainClass": "Heap.HeapSort",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch KLargestElements(1)",
-            "request": "launch",
-            "mainClass": "Heap.KLargestElements",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch KSortedArray(1)",
-            "request": "launch",
-            "mainClass": "Heap.KSortedArray",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MedianOfStream(1)",
-            "request": "launch",
-            "mainClass": "Heap.MedianOfStream",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MergeKSortedArray(1)",
-            "request": "launch",
-            "mainClass": "Heap.MergeKSortedArray",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MinBinaryHeap(1)",
-            "request": "launch",
-            "mainClass": "Heap.MinBinaryHeap",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch CatalanNumber(1)",
-            "request": "launch",
-            "mainClass": "Number_Theory.CatalanNumber",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckForPrime(1)",
-            "request": "launch",
-            "mainClass": "Number_Theory.CheckForPrime",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch GCDandLCM(1)",
-            "request": "launch",
-            "mainClass": "Number_Theory.GCDandLCM",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch PrimeFactors(1)",
-            "request": "launch",
-            "mainClass": "Number_Theory.PrimeFactors",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch SieveOfEratosthenes(1)",
-            "request": "launch",
-            "mainClass": "Number_Theory.SieveOfEratosthenes",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch Anagram(1)",
-            "request": "launch",
-            "mainClass": "String.Anagram",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch AnagramSearch(1)",
-            "request": "launch",
-            "mainClass": "String.AnagramSearch",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch KMPAlgo(1)",
-            "request": "launch",
-            "mainClass": "String.KMPAlgo",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeftMostRepeatingChar(1)",
-            "request": "launch",
-            "mainClass": "String.LeftMostRepeatingChar",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LexicographicRank_String(1)",
-            "request": "launch",
-            "mainClass": "String.LexicographicRank_String",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch PatternSearching(1)",
-            "request": "launch",
-            "mainClass": "String.PatternSearching",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch SubsequenceString(1)",
-            "request": "launch",
-            "mainClass": "String.SubsequenceString",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch BinarySearchTree(1)",
-            "request": "launch",
-            "mainClass": "Tree.BinarySearchTree",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.CheckBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckBalancedTree(1)",
-            "request": "launch",
-            "mainClass": "Tree.CheckBalancedTree",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch CheckPreorderArrayIsBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.CheckPreorderArrayIsBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch ChildrenSumProperty(1)",
-            "request": "launch",
-            "mainClass": "Tree.ChildrenSumProperty",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch CountingLeaves(1)",
-            "request": "launch",
-            "mainClass": "Tree.CountingLeaves",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch DiameterOfBinaryTree(1)",
-            "request": "launch",
-            "mainClass": "Tree.DiameterOfBinaryTree",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch KthSamllestEleInBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.KthSamllestEleInBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LargestBSTinBinaryTree(1)",
-            "request": "launch",
-            "mainClass": "Tree.LargestBSTinBinaryTree",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeafNodesFromPreorder(1)",
-            "request": "launch",
-            "mainClass": "Tree.LeafNodesFromPreorder",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LeftRightViewOfBinaryTree(1)",
-            "request": "launch",
-            "mainClass": "Tree.LeftRightViewOfBinaryTree",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LowestCommonAncestorBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.LowestCommonAncestorBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch LowestCommonAncestorBinaryTree(1)",
-            "request": "launch",
-            "mainClass": "Tree.LowestCommonAncestorBinaryTree",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MaximumPathSum(1)",
-            "request": "launch",
-            "mainClass": "Tree.MaximumPathSum",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MergeTwoBSTs(1)",
-            "request": "launch",
-            "mainClass": "Tree.MergeTwoBSTs",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch MorrisTraversal(1)",
-            "request": "launch",
-            "mainClass": "Tree.MorrisTraversal",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch PairSumBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.PairSumBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch PreorderToPostorderBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.PreorderToPostorderBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeByPostorderAndInorder(1)",
-            "request": "launch",
-            "mainClass": "Tree.TreeByPostorderAndInorder",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeByPreorderAndInorder(1)",
-            "request": "launch",
-            "mainClass": "Tree.TreeByPreorderAndInorder",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeTraversalsIterative(1)",
-            "request": "launch",
-            "mainClass": "Tree.TreeTraversalsIterative",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch TreeTraversalsRecursive(1)",
-            "request": "launch",
-            "mainClass": "Tree.TreeTraversalsRecursive",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch TwoNodesSwapBST(1)",
-            "request": "launch",
-            "mainClass": "Tree.TwoNodesSwapBST",
-            "projectName": "DSAlgo"
-        },
-        {
-            "type": "java",
-            "name": "Launch UniqueBSTs(1)",
-            "request": "launch",
-            "mainClass": "Tree.UniqueBSTs",
-            "projectName": "DSAlgo"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch MaximumDiff",
+      "request": "launch",
+      "mainClass": "arrays.MaximumDiff",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeadersInArray",
+      "request": "launch",
+      "mainClass": "arrays.LeadersInArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch WindowSlidingTechnique",
+      "request": "launch",
+      "mainClass": "arrays.gfg.WindowSlidingTechnique",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PrefixSum",
+      "request": "launch",
+      "mainClass": "arrays.gfg.PrefixSum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MajorityElement",
+      "request": "launch",
+      "mainClass": "arrays.gfg.MajorityElement",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MergeOverlappingIntervals",
+      "request": "launch",
+      "mainClass": "arrays.medium.MergeOverlappingIntervals",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MinimumCharPalindrome",
+      "request": "launch",
+      "mainClass": "string.basic.MinimumCharPalindrome",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestPalindromeSubstring",
+      "request": "launch",
+      "mainClass": "string.basic.LongestPalindromeSubstring",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch ReverseString",
+      "request": "launch",
+      "mainClass": "string.basic.ReverseString",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubsequenceString",
+      "request": "launch",
+      "mainClass": "string.SubsequenceString",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftMostRepeatingChar",
+      "request": "launch",
+      "mainClass": "string.LeftMostRepeatingChar",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch ConsecutiveOnes",
+      "request": "launch",
+      "mainClass": "Arrays.ConsecutiveOnes",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeadersInArray",
+      "request": "launch",
+      "mainClass": "Arrays.LeadersInArray",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftRotateByd",
+      "request": "launch",
+      "mainClass": "Arrays.LeftRotateByd",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumCircularSubarraySum",
+      "request": "launch",
+      "mainClass": "Arrays.MaximumCircularSubarraySum",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumDiff",
+      "request": "launch",
+      "mainClass": "Arrays.MaximumDiff",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumSubarraySum",
+      "request": "launch",
+      "mainClass": "Arrays.MaximumSubarraySum",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch StockBuySell",
+      "request": "launch",
+      "mainClass": "Arrays.StockBuySell",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch TrappingRainWater",
+      "request": "launch",
+      "mainClass": "Arrays.TrappingRainWater",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch ZeroToEnd",
+      "request": "launch",
+      "mainClass": "Arrays.ZeroToEnd",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MedianOfTwoSortedArrayOfDifferentLength",
+      "request": "launch",
+      "mainClass": "BinarySearch.MedianOfTwoSortedArrayOfDifferentLength",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch KaratsubaAlgorithm",
+      "request": "launch",
+      "mainClass": "Divide_Conquer.KaratsubaAlgorithm",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch BooleanParenthesization",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.BooleanParenthesization",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch EggDropping",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.EggDropping",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestCommonSubsequence",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.LongestCommonSubsequence",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestPalindromicSubsequence",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.LongestPalindromicSubsequence",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestRepeatingSubsequence",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.LongestRepeatingSubsequence",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MatrixChainMultiplication",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.MatrixChainMultiplication",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MinimumInsertionDeletion",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.MinimumInsertionDeletion",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch PalindromicPartitioning",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.PalindromicPartitioning",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubsetSum",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.SubsetSum",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch ActivitySelection",
+      "request": "launch",
+      "mainClass": "Greedy_Algorithm.ActivitySelection",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch FractionalKnapsack",
+      "request": "launch",
+      "mainClass": "Greedy_Algorithm.FractionalKnapsack",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch JobSequencing",
+      "request": "launch",
+      "mainClass": "Greedy_Algorithm.JobSequencing",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch FourSumNumbers",
+      "request": "launch",
+      "mainClass": "Hashing.FourSumNumbers",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch HeapSort",
+      "request": "launch",
+      "mainClass": "Heap.HeapSort",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch KLargestElements",
+      "request": "launch",
+      "mainClass": "Heap.KLargestElements",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch KSortedArray",
+      "request": "launch",
+      "mainClass": "Heap.KSortedArray",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MedianOfStream",
+      "request": "launch",
+      "mainClass": "Heap.MedianOfStream",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MergeKSortedArray",
+      "request": "launch",
+      "mainClass": "Heap.MergeKSortedArray",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MinBinaryHeap",
+      "request": "launch",
+      "mainClass": "Heap.MinBinaryHeap",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch CatalanNumber",
+      "request": "launch",
+      "mainClass": "Number_Theory.CatalanNumber",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckForPrime",
+      "request": "launch",
+      "mainClass": "Number_Theory.CheckForPrime",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch GCDandLCM",
+      "request": "launch",
+      "mainClass": "Number_Theory.GCDandLCM",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch PrimeFactors",
+      "request": "launch",
+      "mainClass": "Number_Theory.PrimeFactors",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch SieveOfEratosthenes",
+      "request": "launch",
+      "mainClass": "Number_Theory.SieveOfEratosthenes",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch Anagram",
+      "request": "launch",
+      "mainClass": "String.Anagram",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch AnagramSearch",
+      "request": "launch",
+      "mainClass": "String.AnagramSearch",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch KMPAlgo",
+      "request": "launch",
+      "mainClass": "String.KMPAlgo",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftMostRepeatingChar",
+      "request": "launch",
+      "mainClass": "String.LeftMostRepeatingChar",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LexicographicRank_String",
+      "request": "launch",
+      "mainClass": "String.LexicographicRank_String",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch PatternSearching",
+      "request": "launch",
+      "mainClass": "String.PatternSearching",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubsequenceString",
+      "request": "launch",
+      "mainClass": "String.SubsequenceString",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch BinarySearchTree",
+      "request": "launch",
+      "mainClass": "Tree.BinarySearchTree",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckBST",
+      "request": "launch",
+      "mainClass": "Tree.CheckBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckBalancedTree",
+      "request": "launch",
+      "mainClass": "Tree.CheckBalancedTree",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckPreorderArrayIsBST",
+      "request": "launch",
+      "mainClass": "Tree.CheckPreorderArrayIsBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch ChildrenSumProperty",
+      "request": "launch",
+      "mainClass": "Tree.ChildrenSumProperty",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch CountingLeaves",
+      "request": "launch",
+      "mainClass": "Tree.CountingLeaves",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch DiameterOfBinaryTree",
+      "request": "launch",
+      "mainClass": "Tree.DiameterOfBinaryTree",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch KthSamllestEleInBST",
+      "request": "launch",
+      "mainClass": "Tree.KthSamllestEleInBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LargestBSTinBinaryTree",
+      "request": "launch",
+      "mainClass": "Tree.LargestBSTinBinaryTree",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeafNodesFromPreorder",
+      "request": "launch",
+      "mainClass": "Tree.LeafNodesFromPreorder",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftRightViewOfBinaryTree",
+      "request": "launch",
+      "mainClass": "Tree.LeftRightViewOfBinaryTree",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LowestCommonAncestorBST",
+      "request": "launch",
+      "mainClass": "Tree.LowestCommonAncestorBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch LowestCommonAncestorBinaryTree",
+      "request": "launch",
+      "mainClass": "Tree.LowestCommonAncestorBinaryTree",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumPathSum",
+      "request": "launch",
+      "mainClass": "Tree.MaximumPathSum",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MergeTwoBSTs",
+      "request": "launch",
+      "mainClass": "Tree.MergeTwoBSTs",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch MorrisTraversal",
+      "request": "launch",
+      "mainClass": "Tree.MorrisTraversal",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch PairSumBST",
+      "request": "launch",
+      "mainClass": "Tree.PairSumBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch PreorderToPostorderBST",
+      "request": "launch",
+      "mainClass": "Tree.PreorderToPostorderBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeByPostorderAndInorder",
+      "request": "launch",
+      "mainClass": "Tree.TreeByPostorderAndInorder",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeByPreorderAndInorder",
+      "request": "launch",
+      "mainClass": "Tree.TreeByPreorderAndInorder",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeTraversalsIterative",
+      "request": "launch",
+      "mainClass": "Tree.TreeTraversalsIterative",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeTraversalsRecursive",
+      "request": "launch",
+      "mainClass": "Tree.TreeTraversalsRecursive",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch TwoNodesSwapBST",
+      "request": "launch",
+      "mainClass": "Tree.TwoNodesSwapBST",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch UniqueBSTs",
+      "request": "launch",
+      "mainClass": "Tree.UniqueBSTs",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch ConsecutiveOnes(1)",
+      "request": "launch",
+      "mainClass": "Arrays.ConsecutiveOnes",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeadersInArray(1)",
+      "request": "launch",
+      "mainClass": "Arrays.LeadersInArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftRotateByd(1)",
+      "request": "launch",
+      "mainClass": "Arrays.LeftRotateByd",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumCircularSubarraySum(1)",
+      "request": "launch",
+      "mainClass": "Arrays.MaximumCircularSubarraySum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumDiff(1)",
+      "request": "launch",
+      "mainClass": "Arrays.MaximumDiff",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumSubarraySum(1)",
+      "request": "launch",
+      "mainClass": "Arrays.MaximumSubarraySum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch StockBuySell(1)",
+      "request": "launch",
+      "mainClass": "Arrays.StockBuySell",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TrappingRainWater(1)",
+      "request": "launch",
+      "mainClass": "Arrays.TrappingRainWater",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch ZeroToEnd(1)",
+      "request": "launch",
+      "mainClass": "Arrays.ZeroToEnd",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MedianOfTwoSortedArrayOfDifferentLength(1)",
+      "request": "launch",
+      "mainClass": "BinarySearch.MedianOfTwoSortedArrayOfDifferentLength",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch KaratsubaAlgorithm(1)",
+      "request": "launch",
+      "mainClass": "Divide_Conquer.KaratsubaAlgorithm",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch BooleanParenthesization(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.BooleanParenthesization",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch EggDropping(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.EggDropping",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestCommonSubsequence(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.LongestCommonSubsequence",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestPalindromicSubsequence(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.LongestPalindromicSubsequence",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LongestRepeatingSubsequence(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.LongestRepeatingSubsequence",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MatrixChainMultiplication(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.MatrixChainMultiplication",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MinimumInsertionDeletion(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.MinimumInsertionDeletion",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PalindromicPartitioning(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.PalindromicPartitioning",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubsetSum(1)",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.SubsetSum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch ActivitySelection(1)",
+      "request": "launch",
+      "mainClass": "Greedy_Algorithm.ActivitySelection",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch FractionalKnapsack(1)",
+      "request": "launch",
+      "mainClass": "Greedy_Algorithm.FractionalKnapsack",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch JobSequencing(1)",
+      "request": "launch",
+      "mainClass": "Greedy_Algorithm.JobSequencing",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch FourSumNumbers(1)",
+      "request": "launch",
+      "mainClass": "Hashing.FourSumNumbers",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch HeapSort(1)",
+      "request": "launch",
+      "mainClass": "Heap.HeapSort",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch KLargestElements(1)",
+      "request": "launch",
+      "mainClass": "Heap.KLargestElements",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch KSortedArray(1)",
+      "request": "launch",
+      "mainClass": "Heap.KSortedArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MedianOfStream(1)",
+      "request": "launch",
+      "mainClass": "Heap.MedianOfStream",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MergeKSortedArray(1)",
+      "request": "launch",
+      "mainClass": "Heap.MergeKSortedArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MinBinaryHeap(1)",
+      "request": "launch",
+      "mainClass": "Heap.MinBinaryHeap",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch CatalanNumber(1)",
+      "request": "launch",
+      "mainClass": "Number_Theory.CatalanNumber",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckForPrime(1)",
+      "request": "launch",
+      "mainClass": "Number_Theory.CheckForPrime",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch GCDandLCM(1)",
+      "request": "launch",
+      "mainClass": "Number_Theory.GCDandLCM",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PrimeFactors(1)",
+      "request": "launch",
+      "mainClass": "Number_Theory.PrimeFactors",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch SieveOfEratosthenes(1)",
+      "request": "launch",
+      "mainClass": "Number_Theory.SieveOfEratosthenes",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch Anagram(1)",
+      "request": "launch",
+      "mainClass": "String.Anagram",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch AnagramSearch(1)",
+      "request": "launch",
+      "mainClass": "String.AnagramSearch",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch KMPAlgo(1)",
+      "request": "launch",
+      "mainClass": "String.KMPAlgo",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftMostRepeatingChar(1)",
+      "request": "launch",
+      "mainClass": "String.LeftMostRepeatingChar",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LexicographicRank_String(1)",
+      "request": "launch",
+      "mainClass": "String.LexicographicRank_String",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PatternSearching(1)",
+      "request": "launch",
+      "mainClass": "String.PatternSearching",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubsequenceString(1)",
+      "request": "launch",
+      "mainClass": "String.SubsequenceString",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch BinarySearchTree(1)",
+      "request": "launch",
+      "mainClass": "Tree.BinarySearchTree",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.CheckBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckBalancedTree(1)",
+      "request": "launch",
+      "mainClass": "Tree.CheckBalancedTree",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch CheckPreorderArrayIsBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.CheckPreorderArrayIsBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch ChildrenSumProperty(1)",
+      "request": "launch",
+      "mainClass": "Tree.ChildrenSumProperty",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch CountingLeaves(1)",
+      "request": "launch",
+      "mainClass": "Tree.CountingLeaves",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch DiameterOfBinaryTree(1)",
+      "request": "launch",
+      "mainClass": "Tree.DiameterOfBinaryTree",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch KthSamllestEleInBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.KthSamllestEleInBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LargestBSTinBinaryTree(1)",
+      "request": "launch",
+      "mainClass": "Tree.LargestBSTinBinaryTree",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeafNodesFromPreorder(1)",
+      "request": "launch",
+      "mainClass": "Tree.LeafNodesFromPreorder",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LeftRightViewOfBinaryTree(1)",
+      "request": "launch",
+      "mainClass": "Tree.LeftRightViewOfBinaryTree",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LowestCommonAncestorBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.LowestCommonAncestorBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch LowestCommonAncestorBinaryTree(1)",
+      "request": "launch",
+      "mainClass": "Tree.LowestCommonAncestorBinaryTree",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumPathSum(1)",
+      "request": "launch",
+      "mainClass": "Tree.MaximumPathSum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MergeTwoBSTs(1)",
+      "request": "launch",
+      "mainClass": "Tree.MergeTwoBSTs",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MorrisTraversal(1)",
+      "request": "launch",
+      "mainClass": "Tree.MorrisTraversal",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PairSumBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.PairSumBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PreorderToPostorderBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.PreorderToPostorderBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeByPostorderAndInorder(1)",
+      "request": "launch",
+      "mainClass": "Tree.TreeByPostorderAndInorder",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeByPreorderAndInorder(1)",
+      "request": "launch",
+      "mainClass": "Tree.TreeByPreorderAndInorder",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeTraversalsIterative(1)",
+      "request": "launch",
+      "mainClass": "Tree.TreeTraversalsIterative",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TreeTraversalsRecursive(1)",
+      "request": "launch",
+      "mainClass": "Tree.TreeTraversalsRecursive",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TwoNodesSwapBST(1)",
+      "request": "launch",
+      "mainClass": "Tree.TwoNodesSwapBST",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch UniqueBSTs(1)",
+      "request": "launch",
+      "mainClass": "Tree.UniqueBSTs",
+      "projectName": "DSAlgo"
+    }
+  ]
 }

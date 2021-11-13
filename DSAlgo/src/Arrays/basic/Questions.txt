@@ -1,0 +1,3 @@
+Find the duplicate in an array of N integers: Practise Link(https://practice.geeksforgeeks.org/problems/find-duplicates-in-an-array/1)
+    https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/
+    https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/

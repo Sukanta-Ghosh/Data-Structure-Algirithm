@@ -5,6 +5,14 @@ https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1 */
 
 public class TrappingRainWater {
 
+	public static void main(String[] args) {
+
+		int[] arr = { 5, 0, 6, 2, 3 };
+		int n = arr.length;
+
+		System.out.println(getWaterEffic(arr, n));
+	}
+
 	// Method 2 : Efficient
 	// Time Complexity: O(n)
 	// Auxiliary Space: O(n)
@@ -31,14 +39,6 @@ public class TrappingRainWater {
 
 		return res;
 
-	}
-
-	public static void main(String[] args) {
-
-		int[] arr = { 5, 0, 6, 2, 3 };
-		int n = arr.length;
-
-		System.out.println(getWaterEffic(arr, n));
 	}
 
 	// Method 1 : Naive

@@ -9,7 +9,7 @@ public class MaximumSubarraySum {
 	 * Kadane's Algorithm || Method 2 : Efficient || Time Complexity: O(n) ||
 	 * Auxiliary Space: O(1)
 	 */
-	int kadaneAlgorithm(int[] arr, int n) {
+	static int kadaneAlgorithm(int[] arr, int n) {
 
 		int res = 0;
 		int maxEnding = arr[0];
@@ -26,8 +26,7 @@ public class MaximumSubarraySum {
 		int[] arr = { -3, 8, -2, 4, -5, 6 };
 		int n = arr.length;
 
-		MaximumSubarraySum obj = new MaximumSubarraySum();
-		System.out.println(obj.kadaneAlgorithm(arr, n));
+		System.out.println(kadaneAlgorithm(arr, n));
 	}
 
 	/*
