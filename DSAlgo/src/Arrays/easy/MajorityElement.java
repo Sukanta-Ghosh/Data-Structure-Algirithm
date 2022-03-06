@@ -1,4 +1,4 @@
-package Arrays.gfg;
+package Arrays.easy;
 
 /* 
 Practise Link: https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1 */
