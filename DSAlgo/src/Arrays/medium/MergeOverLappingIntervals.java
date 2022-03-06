@@ -1,4 +1,4 @@
-package arrays.medium;
+package Arrays.medium;
 
 /* Question Link: https://leetcode.com/problems/merge-intervals/ 
     Reference Link: https://www.geeksforgeeks.org/merging-intervals/

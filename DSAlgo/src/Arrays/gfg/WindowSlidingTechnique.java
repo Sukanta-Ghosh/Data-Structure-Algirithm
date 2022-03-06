@@ -1,4 +1,4 @@
-package arrays.gfg;
+package Arrays.gfg;
 
 public class WindowSlidingTechnique {
 

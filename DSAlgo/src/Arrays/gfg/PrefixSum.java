@@ -1,4 +1,4 @@
-package arrays.gfg;
+package Arrays.gfg;
 
 /* Reference Link: 
 https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/ 

@@ -1,4 +1,4 @@
-package arrays.gfg;
+package Arrays.gfg;
 
 /* Practise Link 
 https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements/0 */

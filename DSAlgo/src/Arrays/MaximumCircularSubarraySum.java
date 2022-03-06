@@ -1,4 +1,4 @@
-package arrays;
+package Arrays;
 
 /* Practise Link 
 https://practice.geeksforgeeks.org/problems/max-circular-subarray-sum-1587115620/1 */

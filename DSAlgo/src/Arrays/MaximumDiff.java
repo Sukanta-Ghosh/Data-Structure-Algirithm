@@ -1,4 +1,4 @@
-package arrays;
+package Arrays;
 
 /* Practise Link 
 https://www.geeksforgeeks.org/maximum-difference-between-two-elements/ */
