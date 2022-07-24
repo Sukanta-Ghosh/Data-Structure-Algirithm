@@ -12,6 +12,9 @@ public class PrefixSum {
 
     /**
      * Prefix Sum Array // Application 1 // Time: O(n)
+     * Given an array arr[] of size n, its prefix sum array is another array
+     * prefixSum[] of the same size, such that the value of prefixSum[i] is arr[0] +
+     * arr[1] + arr[2] … arr[i].
      */
     static int[] preSum(int arr[], int n) {
 
@@ -26,6 +29,10 @@ public class PrefixSum {
         return prefix_sum;
     }
 
+    /*
+     * Given an array arr[] of size n. Given Q queries and in each query given L and
+     * R, print sum of array elements from index L to R.
+     */
     static int getSum(int prefix_sum[], int l, int r) {
         if (l != 0)
             return prefix_sum[r] - prefix_sum[l - 1];
@@ -37,12 +44,17 @@ public class PrefixSum {
      * Equilibrium Point(Efficient Method) || Time: O(n) || Space: O(1) ||
      * Application 2 || Practise_Link:
      * https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+     * 
+     * QS. Given an array A of n positive numbers. The task is to find the first
+     * Equilibium Point in the array. Equilibrium Point in an array is a position
+     * such that the sum of elements
+     * before it is equal to the sum of elements after it.
      */
     static boolean checkEquilibrium(int arr[], int n) {
 
-        // Computing total sum of the Array
         int sum = 0;
 
+        // Computing total sum of the Array
         for (int i = 0; i < n; i++) {
             sum += arr[i];
         }
@@ -55,7 +67,7 @@ public class PrefixSum {
 
             leftSideSum += arr[i];
 
-            // Here sum var will act as rightSideSum
+            // Here sum variable will act as rightSideSum
             sum -= arr[i];
         }
 
@@ -65,6 +77,12 @@ public class PrefixSum {
     /**
      * Maximum Occuring Element || Application 3 || Practise Link:
      * https://practice.geeksforgeeks.org/problems/maximum-occured-integer4602/1
+     * 
+     * Qs Statement: Given n integer ranges, the task is to find the maximum
+     * occurring integer in these ranges. If more than one such integer exits, find
+     * the smallest one. The ranges are given as two arrays L[] and R[]. L[i]
+     * consists of starting point of range and R[i] consists of corresponding end
+     * point of the range.
      */
     static int maxOcc(int L[], int R[], int n) {
         int arr[] = new int[1000];

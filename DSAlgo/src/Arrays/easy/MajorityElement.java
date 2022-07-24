@@ -13,7 +13,7 @@ public class MajorityElement {
     public static void main(String args[]) {
         int arr[] = { 8, 8, 6, 6, 6, 4, 6 }, n = 7;
 
-        System.out.println(findMajority(arr, n)); // o/p: 3
+        System.out.println(findMajority(arr, n)); // o/p: 6
 
     }
 

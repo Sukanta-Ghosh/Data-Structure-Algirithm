@@ -3,6 +3,7 @@ package Arrays;
 /* Parctise Link
 https://leetcode.com/problems/max-consecutive-ones/ */
 
+// QS: Given a binary array nums, return the maximum number of consecutive 1's in the array.
 public class ConsecutiveOnes {
 
 	public static void main(String[] args) {

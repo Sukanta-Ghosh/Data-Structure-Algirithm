@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Demo",
+      "request": "launch",
+      "mainClass": "Demo",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch PrefixSum",
+      "request": "launch",
+      "mainClass": "Arrays.easy.PrefixSum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MajorityElement",
+      "request": "launch",
+      "mainClass": "Arrays.easy.MajorityElement",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
       "name": "Launch MaximumDiff",
       "request": "launch",
       "mainClass": "arrays.MaximumDiff",
