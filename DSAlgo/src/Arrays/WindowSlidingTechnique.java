@@ -1,4 +1,4 @@
-package Arrays.easy;
+package Arrays;
 
 public class WindowSlidingTechnique {
 

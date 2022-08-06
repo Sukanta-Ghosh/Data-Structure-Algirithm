@@ -1,4 +1,4 @@
-package Arrays.easy;
+package Arrays;
 
 /* Practise Link 
 https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements/0 */

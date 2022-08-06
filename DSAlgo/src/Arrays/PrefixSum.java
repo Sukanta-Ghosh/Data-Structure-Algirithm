@@ -1,4 +1,4 @@
-package Arrays.easy;
+package Arrays;
 
 /* Reference Link: 
 https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/ 
@@ -87,6 +87,7 @@ public class PrefixSum {
     static int maxOcc(int L[], int R[], int n) {
         int arr[] = new int[1000];
 
+        // TODO: Add comment
         for (int i = 0; i < n; i++) {
             arr[L[i]]++;
 
@@ -115,16 +116,16 @@ public class PrefixSum {
 
         int prefix_sum[] = preSum(arr, n);
 
-        System.out.println(getSum(prefix_sum, 1, 3));
-        System.out.println(getSum(prefix_sum, 0, 2));
+        System.out.println(getSum(prefix_sum, 1, 3)); // 20
+        System.out.println(getSum(prefix_sum, 0, 2)); // 13
 
         // Equilibrium Point
         int arr1[] = { 3, 4, 8, -9, 20, 6 }, n1 = 6;
-        System.out.println(checkEquilibrium(arr1, n1));
+        System.out.println(checkEquilibrium(arr1, n1)); // true
 
         // Maximum Occuring Element
         int L[] = { 1, 2, 3 }, R[] = { 3, 5, 7 }, n2 = 3;
-        System.out.println(maxOcc(L, R, n2));
+        System.out.println(maxOcc(L, R, n2)); // 3
 
     }
 }

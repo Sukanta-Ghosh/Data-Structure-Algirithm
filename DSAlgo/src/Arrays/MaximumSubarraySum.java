@@ -1,7 +1,11 @@
 package Arrays;
 
-/* Practise Link 
-https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1 */
+/* Practise Link:
+https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1 
+
+Problem Statement: Given an array Arr[] of N integers. 
+Find the contiguous sub-array(containing at least one number) which has the maximum sum 
+and return its sum.*/
 
 public class MaximumSubarraySum {
 
@@ -11,14 +15,16 @@ public class MaximumSubarraySum {
 	 */
 	static int kadaneAlgorithm(int[] arr, int n) {
 
-		int res = 0;
-		int maxEnding = arr[0];
+		int currSum = arr[0];
+		int maxSum = currSum;
 
 		for (int i = 1; i < n; i++) {
-			maxEnding = Math.max(maxEnding + arr[i], arr[i]);
-			res = Math.max(maxEnding, res);
+			// Checking condition b/w include currentSum and next element
+			// or consider only next element
+			currSum = Math.max(currSum + arr[i], arr[i]);
+			maxSum = Math.max(currSum, maxSum);
 		}
-		return res;
+		return maxSum;
 	}
 
 	public static void main(String[] args) {
@@ -26,7 +32,7 @@ public class MaximumSubarraySum {
 		int[] arr = { -3, 8, -2, 4, -5, 6 };
 		int n = arr.length;
 
-		System.out.println(kadaneAlgorithm(arr, n));
+		System.out.println(kadaneAlgorithm(arr, n)); // 11
 	}
 
 	/*
