@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch RotateImage",
+      "request": "launch",
+      "mainClass": "Arrays.RotateImage",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch NextPermutation",
+      "request": "launch",
+      "mainClass": "Arrays.NextPermutation",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
       "name": "Launch MergeOverlappingIntervals",
       "request": "launch",
       "mainClass": "Arrays.MergeOverlappingIntervals",
