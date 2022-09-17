@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch QueueusingArray",
+      "request": "launch",
+      "mainClass": "Stack_Queue.QueueusingArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch StackusingArray",
+      "request": "launch",
+      "mainClass": "Stack_Queue.StackusingArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
       "name": "Launch RotateImage",
       "request": "launch",
       "mainClass": "Arrays.RotateImage",

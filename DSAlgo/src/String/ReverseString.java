@@ -1,9 +1,9 @@
-package string.basic;
+package string;
 
 public class ReverseString {
 
     // Reverse the string
-    public static String[] RevString(String[] s, int l) {
+    public static String[] revString(String[] s, int l) {
 
         int j = 0;
 
@@ -32,7 +32,7 @@ public class ReverseString {
         String s = "getting good at coding " + "needs a lot of practice";
         String[] words = s.split("\\s");
 
-        words = RevString(words, words.length);
+        words = revString(words, words.length);
 
         s = String.join(" ", words);
 

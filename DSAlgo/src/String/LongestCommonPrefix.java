@@ -1,4 +1,4 @@
-package string.basic;
+package string;
 
 /* Question link: https://www.geeksforgeeks.org/longest-common-prefix-using-character-by-character-matching/
                 https://www.geeksforgeeks.org/longest-common-prefix-using-word-by-word-matching/ */

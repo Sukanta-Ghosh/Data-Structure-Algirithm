@@ -1,4 +1,4 @@
-package string.basic;
+package string;
 
 //Action: Didn't Understand
 
