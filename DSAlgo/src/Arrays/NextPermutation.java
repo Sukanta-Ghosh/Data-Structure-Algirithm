@@ -21,13 +21,20 @@ public class NextPermutation {
             return;
         }
 
-        // Step 1: Find ith index samller than i+1 index
+        /*
+         * Step 1:
+         * Find index of 1st A[i] element which is smaller
+         * than A[i + 1], i from right side. (A[i] < A[i + 1])
+         */
         int i = nums.length - 2;
         while (i >= 0 && nums[i] >= nums[i + 1])
             i--;
 
-        // Step 2: Find a index that has greater value than
-        // previously found index
+        /*
+         * Step 2:
+         * Find index(j) of A[j] element which is greater than
+         * previous A[i] element and swap
+         */
         if (i >= 0) {
             int j = nums.length - 1;
             while (nums[i] >= nums[j])
@@ -35,8 +42,10 @@ public class NextPermutation {
             swap(nums, i, j);
         }
 
-        // Step 3: Reverse array from index+1 where the index is found at step 1 till
-        // the end of the array.
+        /*
+         * Step 3: Reverse array from index+1 where no is swapped till
+         * the end of the array.
+         */
         reverse(nums, i + 1, nums.length - 1);
 
     }
