@@ -1,6 +1,6 @@
 package Arrays;
 
-import java.util.Comparator;
+import java.util.*;
 
 public class ComparatorClass implements Comparator<Integer> {
     /*

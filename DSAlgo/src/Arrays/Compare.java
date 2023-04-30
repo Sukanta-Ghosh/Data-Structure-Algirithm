@@ -47,5 +47,7 @@ public class Compare {
             System.out.print(l + " ");
         }
 
+        Collections.sort(list, comp);
+
     }
 }
