@@ -2,10 +2,12 @@ package Dynamic_Programming_Library;
 
 import java.util.Arrays;
 
-/* Question Link: https://www.scaler.com/academy/mentee-dashboard/class/70865/homework/problems/10/?navref=cl_pb_nv_tb */
+/* Question Link: https://www.scaler.com/academy/mentee-dashboard/class/70865/homework/problems/1140?navref=cl_tt_nv */
 public class MaximumSumValue {
 
     /*
+     * DP State:
+     * dp[i][j] =
      * Iterative
      * T.C - O(n), S.C - O(n)
      */

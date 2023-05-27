@@ -13,6 +13,12 @@
 - Tree
 - Dynamic Programming
 
+  - Archive
+    -
+  - [Fibonnaci]()
+    - [Stairs]()
+    - [Min no of square]()
+    - [Max Sum Without Adjacent Elements]()
   - [0-1 knapsack](DSAlgo/src/Dynamic_Programming_Library/Knapsack01.java)
     - [Flip Array](DSAlgo/src/Dynamic_Programming_Library/FlipArray.java)
     - [Distinct Subsequences](DSAlgo/src/Dynamic_Programming_Library/DistinctSubsequences.java)
@@ -24,6 +30,12 @@
     - [Cutting Rod](DSAlgo/src/Dynamic_Programming_Library/CuttingRod.java)
   - [Longest Common Subsequence](DSAlgo/src/Dynamic_Programming_Library/LCS.java)
     - Longest Panlindromic Subsequence
+  - [Longest Increasing Subsequence](DSAlgo/src/Dynamic_Programming_Library/LIS.java)
+    - [Russian Doll Envelopes](DSAlgo/src/Dynamic_Programming_Library/RussianDollEnvelopes.java)
+    -
+  - [Catalan Number](DSAlgo/src/Dynamic_Programming_Library/IntersectingChordsCircle.java)
+    - Intersecting Chords
+    - Unique Binary Search Trees
 
 - Heap
 - Divide & Conquer

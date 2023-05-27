@@ -1,3 +1,4 @@
 DP Varities:
 1. 0-1 knapsack - We can either choose item 1 time or not
 2. Unbounded Knapsack - We can choose unlimited number of instances of an item.
+3. Intersecting chords similar to catalan number
