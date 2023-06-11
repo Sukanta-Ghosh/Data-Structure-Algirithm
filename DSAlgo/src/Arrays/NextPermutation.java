@@ -2,6 +2,7 @@ package Arrays;
 
 /* 
  * Leetcode: https://leetcode.com/problems/next-permutation/
+ * Scale Qs: https://www.scaler.com/academy/mentee-dashboard/class/47512/homework/problems/71?navref=cl_tt_lst_sl
  * 
  * Explanation: https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/
  */
@@ -9,6 +10,16 @@ public class NextPermutation {
 
     public static void main(String[] args) {
         int[] arr = { 1, 3, 5, 4, 2 };
+        // o/p: 1, 4, 2, 3, 5
+        /*
+         * Example 1:
+         * Input: 1, 2, 3
+         * Output: 1, 3, 2
+         * ----------------
+         * Example 2:
+         * Input: 3, 2, 1
+         * Output: 1, 2, 3
+         */
         nextPermutation(arr);
 
         for (int i : arr)
@@ -23,28 +34,34 @@ public class NextPermutation {
 
         /*
          * Step 1:
-         * Find index of 1st A[i] element which is smaller
-         * than A[i + 1], i from right side. (A[i] < A[i + 1])
+         * Find index(i) of first element(A[i]) which is smaller
+         * than A[i + 1] element, i is from right side.
+         * (A[i] < A[i + 1])
          */
         int i = nums.length - 2;
-        while (i >= 0 && nums[i] >= nums[i + 1])
+        while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
+        }
+        System.out.println(i);
 
         /*
          * Step 2:
          * Find index(j) of A[j] element which is greater than
-         * previous A[i] element and swap
+         * previous computed A[i] element
+         * and swap
          */
         if (i >= 0) {
             int j = nums.length - 1;
-            while (nums[i] >= nums[j])
+            while (nums[i] >= nums[j]) {
                 j--;
+            }
+            System.out.println(j);
             swap(nums, i, j);
         }
 
         /*
-         * Step 3: Reverse array from index+1 where no is swapped till
-         * the end of the array.
+         * Step 3: Reverse array from i + 1 th index to array end
+         * where no is swapped till the end of the array.
          */
         reverse(nums, i + 1, nums.length - 1);
 

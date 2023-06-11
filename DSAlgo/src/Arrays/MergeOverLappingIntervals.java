@@ -29,6 +29,56 @@ class Interval {
 // Java program to merge overlapping Intervals in
 // O(n Log n) time and O(1) extra space
 class MergeOverlappingIntervals {
+
+    /*
+     * GFG Solution Link: https://www.geeksforgeeks.org/merging-intervals/
+     * Scale soln:
+     * https://www.scaler.com/academy/mentee-dashboard/class/47512/assignment/
+     * problems/61?navref=cl_tt_lst_sl
+     * 
+     * Function that takes a set of intervals, merges
+     * overlapping intervals and prints the result
+     */
+    public static void mergeIntervals(Interval arr[]) {
+
+        /*
+         * Sort Intervals in increasing order based on start time
+         * using comparator
+         */
+        Arrays.sort(arr, new Comparator<Interval>() {
+            public int compare(Interval i1, Interval i2) {
+                return i1.start - i2.start;
+            }
+        });
+
+        /*
+         * Stores index of last element in output array (modified arr[])
+         * Store index 0
+         */
+        int index = 0;
+
+        // Traverse all input Intervals
+        for (int i = 1; i < arr.length; i++) {
+            // If this is not first Interval and overlaps with the previous one
+            if (arr[index].end >= arr[i].start) {
+                // Merge previous and current Intervals
+                arr[index].start = Math.min(arr[index].start, arr[i].start);
+                arr[index].end = Math.max(arr[index].end, arr[i].end);
+            }
+            /* else increase index by 1 and assign current interval */
+            else {
+                index++;
+                arr[index] = arr[i];
+            }
+        }
+
+        // Now arr[0..index-1] stores the merged Intervals
+        System.out.print("The Merged Intervals are: ");
+        for (int i = 0; i <= index; i++) {
+            System.out.print("[" + arr[i].start + "," + arr[i].end + "]");
+        }
+    }
+
     public static void main(String args[]) {
 
         // Striver Solution
@@ -81,44 +131,6 @@ class MergeOverlappingIntervals {
         result.add(new int[] { start, end });
 
         return result.toArray(new int[0][]);
-    }
-
-    /*
-     * GFG Solution Link: https://www.geeksforgeeks.org/merging-intervals/
-     * 
-     * Function that takes a set of intervals, merges
-     * overlapping intervals and prints the result
-     */
-    public static void mergeIntervals(Interval arr[]) {
-
-        // Sort Intervals in increasing order of start time
-        Arrays.sort(arr, new Comparator<Interval>() {
-            public int compare(Interval i1, Interval i2) {
-                return i1.start - i2.start;
-            }
-        });
-
-        int index = 0; // Stores index of last element
-        // in output array (modified arr[])
-
-        // Traverse all input Intervals
-        for (int i = 1; i < arr.length; i++) {
-            // If this is not first Interval and overlaps with the previous one
-            if (arr[index].end >= arr[i].start) {
-                // Merge previous and current Intervals
-                arr[index].end = Math.max(arr[index].end, arr[i].end);
-                arr[index].start = Math.min(arr[index].start, arr[i].start);
-            } else {
-                index++;
-                arr[index] = arr[i];
-            }
-        }
-
-        // Now arr[0..index-1] stores the merged Intervals
-        System.out.print("The Merged Intervals are: ");
-        for (int i = 0; i <= index; i++) {
-            System.out.print("[" + arr[i].start + "," + arr[i].end + "]");
-        }
     }
 
 }

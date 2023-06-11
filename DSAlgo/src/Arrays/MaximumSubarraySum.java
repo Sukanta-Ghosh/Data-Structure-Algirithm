@@ -1,6 +1,7 @@
 package Arrays;
 
 /* Practise Link:
+Scale link: https://www.scaler.com/academy/mentee-dashboard/class/47508/assignment/problems/56/chatgpt-help?navref=cl_pb_nv_tb
 https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1 
 
 Problem Statement: Given an array Arr[] of N integers. 
@@ -10,8 +11,10 @@ and return its sum.*/
 public class MaximumSubarraySum {
 
 	/*
-	 * Kadane's Algorithm || Method 2 : Efficient || Time Complexity: O(n) ||
-	 * Auxiliary Space: O(1)
+	 * Kadane's Algorithm
+	 * Method 2 : Efficient
+	 * T.C: O(n)
+	 * S.c: O(1)
 	 */
 	static int kadaneAlgorithm(int[] arr, int n) {
 
@@ -19,10 +22,20 @@ public class MaximumSubarraySum {
 		int maxSum = currSum;
 
 		for (int i = 1; i < n; i++) {
-			// Checking condition b/w include currentSum and next element
-			// or consider only next element
+			/*
+			 * Checking condition b/w include currentSum and next element
+			 * or consider only next element
+			 */
 			currSum = Math.max(currSum + arr[i], arr[i]);
 			maxSum = Math.max(currSum, maxSum);
+			/*
+			 * //or logic
+			 * sum += A[i];
+			 * maxSum = Math.max(maxSum, sum);
+			 * if(sum < 0){
+			 * sum = 0;
+			 * }
+			 */
 		}
 		return maxSum;
 	}
@@ -36,7 +49,9 @@ public class MaximumSubarraySum {
 	}
 
 	/*
-	 * Method 1 : Naive || Time Complexity: O(n^2) || Auxiliary Space: O(1)
+	 * Method 1 : Naive
+	 * T.C: O(n ^ 2)
+	 * S.C: O(1)
 	 */
 	int maxSum(int[] arr, int n) {
 

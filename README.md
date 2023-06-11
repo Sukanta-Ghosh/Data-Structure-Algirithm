@@ -1,9 +1,26 @@
 ## Data Structure & Algorithm
 
 - Arrays
-  - [MajorityElement](DSAlgo/src/Arrays/easy/MajorityElement.java)
+  - [ArrayRotation](DSAlgo/src/Arrays/ArrayRotation.java)
   - [PrefixSum](DSAlgo/src/Arrays/easy/PrefixSum.java)
   - [MergeOverlappingIntervals](DSAlgo/src/Arrays/MergeOverLappingIntervals.java)
+  - [Pick From Both Sides](DSAlgo/src/Arrays/PickFromBothSides.java)
+  - [Kadane Algorithm](DSAlgo/src/Arrays/MaximumSubarraySum.java)
+    - [Flip](DSAlgo/src/Arrays/Flip.java)
+    - [Maximum Positivity](DSAlgo/src/Arrays/MaximumPositivity.java)
+  - [Count Increasing Triplet](DSAlgo/src/Arrays/CoutingTriplets.java)
+    - [Length of consecutive ones](DSAlgo/src/Arrays/LenOfLongestConsOnes.java)
+    - Christmas Trees
+  - [Majority Element](DSAlgo/src/Arrays/MajorityElement.java)
+    - [N/3 Repeat Number](DSAlgo/src/Arrays/N3RepeatNo.java)
+  - [Special Index](DSAlgo/src/Arrays/SpecialIndex.java)
+  - [First Missing Integer](DSAlgo/src/Arrays/FirstMissingInteger.java)
+  - [Rain Water Trapped](DSAlgo/src/Arrays/TrappingRainWater.java)
+  - [Next Permutation](DSAlgo/src/Arrays/NextPermutation.java)
+  - [Josephus Problem](DSAlgo/src/Arrays/JosephusProblem.java)
+  - [Closest Min Max](DSAlgo/src/Arrays/ClosestMinMax.java)
+  - [Maximum Subarray Sum](DSAlgo/src/Arrays/MaximumSubarraySum.java)
+  - [Minimum Swaps](DSAlgo/src/Arrays/MinimumSwaps.java)
 - String
 - Stack & Queue
 - Hashing
@@ -14,7 +31,9 @@
 - Dynamic Programming
 
   - Archive
-    -
+    - [Maximum Sum Value](DSAlgo/src/Dynamic_Programming_Library/MaximumSumValue.java)
+    - [Max Product Subarray](DSAlgo/src/Dynamic_Programming_Library/MaxProductSubArray.java)
+    - [Ways To Decode](DSAlgo/src/Dynamic_Programming_Library/WaysToDecode.java)
   - [Fibonnaci]()
     - [Stairs]()
     - [Min no of square]()
