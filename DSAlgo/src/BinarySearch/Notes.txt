@@ -1,0 +1,4 @@
+3 conditions for Binary Search:
+1. Search Space
+2. Target
+3. Some way to discard search space
