@@ -1,0 +1,6 @@
+Heap function:
+==================
+Insertion: add:            O(logN)
+Deletion: remove:          O(logN)
+Searching:                 O(N)
+Getting min and max value: O(1)

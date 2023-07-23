@@ -17,11 +17,14 @@ public class Knapsack01 {
         int maxValue = 50 * n;
 
         /*
-         * DP State
+         * DP State:
          * dp[i][j] => Minimum weight required to get
          * value j with 0-i elements
+         * 
+         * i denotes no of element
+         * j represents weigth capacity
          */
-        // j represents weigth capacity
+        //
         int[][] dpTable = new int[n + 1][maxValue + 1];
         for (int j = 0; j <= maxValue; j++) {
             dpTable[0][j] = Integer.MAX_VALUE;
@@ -135,7 +138,7 @@ public class Knapsack01 {
         /*
          * DP State: i denotes no of element, j denotes capacity
          * dp[i][j] => Max value we can get in a bag of capacity j, such that
-         * you can choose array of i tiems.
+         * you can choose array of first i tiems.
          */
         int[][] dpTable = new int[n + 1][cap + 1];
 

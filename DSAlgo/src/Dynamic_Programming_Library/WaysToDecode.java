@@ -40,10 +40,13 @@ public class WaysToDecode {
      * T.C - O(n), S.C - O(n)
      */
     public int numDecodingsIterative(String A) {
-        int mod = 1000000007;
         int n = A.length();
 
-        // TODO: Mention dp[i] state
+        /*
+         * DP State:
+         * dp[i] => No of ways to decode string A upto
+         * its i length from start
+         */
         int dp[] = new int[n + 1];
 
         if (A.charAt(0) == '0')
@@ -59,7 +62,7 @@ public class WaysToDecode {
 
             // check for double character
             if (A.charAt(i - 2) == '1' || (A.charAt(i - 2) == '2' && A.charAt(i - 1) >= 0 && A.charAt(i - 1) <= '6'))
-                dp[i] = (dp[i] + dp[i - 2]) % mod;
+                dp[i] = dp[i] + dp[i - 2];
         }
 
         return dp[n] % mod;
