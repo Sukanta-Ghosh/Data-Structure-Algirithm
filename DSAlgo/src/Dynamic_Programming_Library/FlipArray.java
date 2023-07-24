@@ -11,6 +11,8 @@ public class FlipArray {
     public int solve(int[] A) {
         int n = A.length;
         int sum = 0;
+
+        /* Find total array sum */
         for (int i = 0; i < n; i++) {
             sum += A[i];
         }
@@ -19,6 +21,10 @@ public class FlipArray {
          * DP State:
          * dp[i][j] => Min elements needed to form the sum j with (0 - i)
          * elements
+         */
+        /*
+         * j space is taken as half to find min elements needed to
+         * flip the sign
          */
         int[][] dpTable = new int[n + 1][sum / 2 + 1];
 
@@ -29,6 +35,7 @@ public class FlipArray {
         for (int i = 0; i < dpTable.length; i++) {
             for (int j = 0; j < dpTable[0].length; j++) {
 
+                /* With min elements min sum can form 0 */
                 if (i == 0 && j == 0) {
                     dpTable[i][j] = 0;
                 }
@@ -42,18 +49,27 @@ public class FlipArray {
                 /* j == 0, to make 0 sum 0 elements needed */
                 else if (j == 0) {
                     dpTable[i][j] = 0;
-                } else {
-                    // If we don't include the element
+                }
+                /* if i and j not 0 */
+                else {
+                    // If we don't include present element
                     int exclude = dpTable[i - 1][j];
 
-                    // MAx value is taken to later evaluate min value
+                    /*
+                     * MAX value is taken if sum cannot be cannot possible
+                     * if we include the current element
+                     */
                     int include = Integer.MAX_VALUE;
 
+                    /*
+                     * j - A[i - 1] => remaining sum,
+                     * if remaining sum greater than 0
+                     */
                     if (j - A[i - 1] >= 0) {
                         int restSum = j - A[i - 1];
 
                         /*
-                         * if dpTable[i - 1][rest] is infinite then, sum cannot
+                         * if dpTable[i - 1][restSum] is infinite then, sum cannot
                          * be formed
                          */
                         if (dpTable[i - 1][restSum] == Integer.MAX_VALUE) {
@@ -63,7 +79,7 @@ public class FlipArray {
                         }
                     }
 
-                    /* Set dp value min b/w exlude and include elements */
+                    /* Set dp value min b/w exlude and include present element */
                     dpTable[i][j] = Math.min(include, exclude);
                 }
             }

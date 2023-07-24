@@ -28,16 +28,16 @@
 - Linked List
 - Sorting & Searching
 - Tree
-- Dynamic Programming
+- [Dynamic Programming](DSAlgo/src/Dynamic_Programming_Library)
 
-  - Archive
+  - No group
     - [Maximum Sum Value](DSAlgo/src/Dynamic_Programming_Library/MaximumSumValue.java)
     - [Max Product Subarray](DSAlgo/src/Dynamic_Programming_Library/MaxProductSubArray.java)
     - [Ways To Decode](DSAlgo/src/Dynamic_Programming_Library/WaysToDecode.java)
-  - [Fibonnaci]()
-    - [Stairs]()
-    - [Min no of square]()
-    - [Max Sum Without Adjacent Elements]()
+  - Fibonnaci
+    - Stairs()
+    - Min no of square()
+    - Max Sum Without Adjacent Elements()
   - [0-1 knapsack](DSAlgo/src/Dynamic_Programming_Library/Knapsack01.java)
     - [Flip Array](DSAlgo/src/Dynamic_Programming_Library/FlipArray.java)
     - [Distinct Subsequences](DSAlgo/src/Dynamic_Programming_Library/DistinctSubsequences.java)
@@ -47,6 +47,7 @@
     - [CoinSum Permutation](DSAlgo/src/Dynamic_Programming_Library/CoinSumPermutation.java)
     - [CoinSum Combination](DSAlgo/src/Dynamic_Programming_Library/CoinSumCombination.java)
     - [Cutting Rod](DSAlgo/src/Dynamic_Programming_Library/CuttingRod.java)
+  - [Fractional Knapsack](DSAlgo/src/Dynamic_Programming_Library/FractionalKnapsack.java)
   - [Longest Common Subsequence](DSAlgo/src/Dynamic_Programming_Library/LCS.java)
     - Longest Panlindromic Subsequence
   - [Longest Increasing Subsequence](DSAlgo/src/Dynamic_Programming_Library/LIS.java)

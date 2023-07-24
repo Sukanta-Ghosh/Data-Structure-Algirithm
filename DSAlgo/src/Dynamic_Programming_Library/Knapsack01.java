@@ -29,7 +29,6 @@ public class Knapsack01 {
         for (int j = 0; j <= maxValue; j++) {
             dpTable[0][j] = Integer.MAX_VALUE;
         }
-        dpTable[0][0] = 0;
 
         /*
          * i represents values and weights index
@@ -38,6 +37,7 @@ public class Knapsack01 {
          * i is taking from 1 index as for 0 capacity j
          * 0 value can be obtained
          */
+        dpTable[0][0] = 0;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= maxValue; j++) {
                 /* If i - 1 th element is not selected */
@@ -125,6 +125,7 @@ public class Knapsack01 {
     }
 
     /*
+     * Note: Main Method
      * Iterative Approach
      * T.C: O(n * k)
      * S.C: O(n * k)

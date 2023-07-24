@@ -5,7 +5,8 @@ public class UnboundedKnapsack {
     /*
      * Iterative Approach
      * T.C: O(n * k)
-     * S.C: O(capacity)
+     * S.C: O(k)
+     * k = capacity
      */
     public static int solve(int A, int[] B, int[] C) {
         int cap = A;
@@ -25,13 +26,14 @@ public class UnboundedKnapsack {
             int max = 0;
             // j loop for iterating through all the elements
             for (int j = 0; j < n; j++) {
-                // if jth element taken capacity left
+                // capacity left after jth element taken
                 int leftCapacity = i - weights[j];
                 if (leftCapacity >= 0) {
-                    // if jth element selected
+                    // if jth element selected, max value will obtain
                     max = Math.max(max, values[j] + dpTable[leftCapacity]);
                 }
             }
+            /* max is the value can be obtained for i capacity bag */
             dpTable[i] = max;
         }
 
