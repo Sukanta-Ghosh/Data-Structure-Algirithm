@@ -1,8 +1,8 @@
 package Dynamic_Programming_Library;
 
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/70875/assignment/problems/4?navref=cl_tt_lst_sl */
 public class LIS {
     /*
-     * Iterative Solution
      * T.C: O(n ^ 2)
      * S.C: O(n)
      */
@@ -11,7 +11,8 @@ public class LIS {
         int ans = 0;
         /*
          * DP State:
-         * dp[i]: Max subsequence len in (0-i) containing ith element
+         * dpTable[i]: Max increasing subsequence len can be formed in (0-i)
+         * containing ith element
          */
         int[] dpTable = new int[n];
 
@@ -27,9 +28,11 @@ public class LIS {
                     maxLen = Math.max(maxLen, dpTable[j]);
                 }
             }
+            /* maxLen + 1: 1 is added to include present element */
             dpTable[i] = maxLen + 1;
         }
 
+        /* For every index check LIS */
         for (int i = 0; i < n; i++) {
             ans = Math.max(ans, dpTable[i]);
         }

@@ -22,12 +22,13 @@ public class CuttingRod {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 /*
-                 * A[j] + dpTable[i - j] means if jth len rod choose then its value +
+                 * A[j - 1] + dpTable[i - j] means for jth len rod choose its value +
                  * remaining i - j rod length max value from dpTable
                  * Check for each length
-                 * A[j - 1] cuz in A array results store from 0 index here we consider j
+                 * Note: A[j - 1] cuz in A array results store from 0 index here we consider j
                  * from 1 based index
                  */
+                // i - j: Checking i - j len rod can be formed or not
                 if (i - j >= 0) {
                     dpTable[i] = Math.max(dpTable[i], A[j - 1] + dpTable[i - j]);
                 }

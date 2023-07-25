@@ -3,8 +3,8 @@ package Dynamic_Programming_Library;
 public class EditDistance {
     /*
      * Recursive Solution
-     * T.C: O(n1 * n2)
-     * S.C: O(n1 * n2)
+     * T.C: O(n * m)
+     * S.C: O(n * m)
      */
     int[][] dpTable;
 
@@ -27,7 +27,7 @@ public class EditDistance {
      */
     public int minOperation(String s1, String s2, int l1, int l2) {
         // Base Condition
-        /* if string 1 len is 0, then have to add remaining string 2 len(l2) */
+        /* if string 1 len is 0, then have to insert remaining string 2 len(l2) */
         if (l1 == 0) {
             return l2;
         }
@@ -36,6 +36,7 @@ public class EditDistance {
             return l1;
         }
 
+        /* If dpTable value is not default 0, then reuse */
         if (dpTable[l1][l2] != 0) {
             return dpTable[l1][l2];
         }
@@ -50,11 +51,13 @@ public class EditDistance {
              * added char is equal to l2 char of string s2.
              * Replace: minOperation(l1 - 1, l2 - 1)=> Both strings len will be decreased
              * Delete: minOperation(l1 - 1, l2)=> String s1 char is deleted, so l1 len will
-             * be
+             * be decreased by 1
              */
             int ifInsert = minOperation(s1, s2, l1, l2 - 1);
             int ifReplaced = minOperation(s1, s2, l1 - 1, l2 - 1);
             int ifDelete = minOperation(s1, s2, l1 - 1, l2);
+
+            /* Find min operation we can find from above 3 actions */
             return dpTable[l1][l2] = 1 + Math.min(ifInsert, Math.min(ifReplaced, ifDelete));
         }
     }

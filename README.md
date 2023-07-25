@@ -34,6 +34,8 @@
     - [Maximum Sum Value](DSAlgo/src/Dynamic_Programming_Library/MaximumSumValue.java)
     - [Max Product Subarray](DSAlgo/src/Dynamic_Programming_Library/MaxProductSubArray.java)
     - [Ways To Decode](DSAlgo/src/Dynamic_Programming_Library/WaysToDecode.java)
+    - [Palindromic Substrings Count](DSAlgo/src/Dynamic_Programming_Library/PalindromicSubstringsCount.java)
+    - [Palindrome Partitioning](DSAlgo/src/Dynamic_Programming_Library/MinPalindromicCut.java)
   - Fibonnaci
     - Stairs()
     - Min no of square()
@@ -44,15 +46,17 @@
     - [Let's Party](DSAlgo/src/Dynamic_Programming_Library/DanceArrangement.java)
     - [Longest Fibonacci Subsequence](DSAlgo/src/Dynamic_Programming_Library/LongestFibSubsequence.java)
   - [Unbounded Knapsack](DSAlgo/src/Dynamic_Programming_Library/UnboundedKnapsack.java)
-    - [CoinSum Permutation](DSAlgo/src/Dynamic_Programming_Library/CoinSumPermutation.java)
-    - [CoinSum Combination](DSAlgo/src/Dynamic_Programming_Library/CoinSumCombination.java)
+    - [Coin Sum Infinite](DSAlgo/src/Dynamic_Programming_Library/CoinSumInfinite.java)
+    - [Coin Sum Permutation](DSAlgo/src/Dynamic_Programming_Library/CoinSumPermutation.java)
+    - [Coin Sum Combination](DSAlgo/src/Dynamic_Programming_Library/CoinSumCombination.java)
     - [Cutting Rod](DSAlgo/src/Dynamic_Programming_Library/CuttingRod.java)
   - [Fractional Knapsack](DSAlgo/src/Dynamic_Programming_Library/FractionalKnapsack.java)
   - [Longest Common Subsequence](DSAlgo/src/Dynamic_Programming_Library/LCS.java)
     - Longest Panlindromic Subsequence
+    - [Edit Distance](DSAlgo/src/Dynamic_Programming_Library/EditDistance.java)
+    - [Regular Expression Match](DSAlgo/src/Dynamic_Programming_Library/RegularExpMaching.java)
   - [Longest Increasing Subsequence](DSAlgo/src/Dynamic_Programming_Library/LIS.java)
     - [Russian Doll Envelopes](DSAlgo/src/Dynamic_Programming_Library/RussianDollEnvelopes.java)
-    -
   - [Catalan Number](DSAlgo/src/Dynamic_Programming_Library/IntersectingChordsCircle.java)
     - Intersecting Chords
     - Unique Binary Search Trees

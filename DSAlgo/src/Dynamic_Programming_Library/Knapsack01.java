@@ -1,11 +1,12 @@
 package Dynamic_Programming_Library;
 
-/* https://www.scaler.com/academy/mentee-dashboard/class/70869/assignment/problems/9292?navref=cl_tt_lst_sl
- * https://www.scaler.com/academy/mentee-dashboard/class/70871/assignment/problems/9347?navref=cl_tt_lst_sl
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/70869/assignment/problems/9292?navref=cl_tt_lst_sl
  */
 public class Knapsack01 {
 
     /*
+     * Qs: https://www.scaler.com/academy/mentee-dashboard/class/70871/assignment/
+     * problems/9347?navref=cl_tt_lst_sl
      * Iterative Approach || Time Optimized(Based on constraints)
      * T.C: O(n * maxValue)
      * S.C: O(n * maxValues)

@@ -1,6 +1,6 @@
 package Dynamic_Programming_Library;
 
-/* https://www.scaler.com/academy/mentee-dashboard/class/70875/assignment/problems/4828/?navref=cl_pb_nv_tb */
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/70875/assignment/problems/4828/?navref=cl_pb_nv_tb */
 public class PalindromicSubstringsCount {
     /*
      * Iterative Solution
@@ -35,9 +35,14 @@ public class PalindromicSubstringsCount {
                         dp[i][j] = true;
                         count++;
                     }
-                } else {
-                    if (A.charAt(i) == A.charAt(j) &&
-                            dp[i + 1][j - 1]) {
+                }
+                /* if gap is greater than 2, means length greater than 2 */
+                else {
+                    /*
+                     * if i and j th char match, then check if dp[i + 1][j - 1]
+                     * is palindrome or not
+                     */
+                    if (A.charAt(i) == A.charAt(j) && dp[i + 1][j - 1]) {
                         dp[i][j] = true;
                         count++;
                     }
