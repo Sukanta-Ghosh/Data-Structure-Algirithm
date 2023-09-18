@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 /* Qs: https://www.scaler.com/academy/mentee-dashboard/class/47536/homework/problems/9155/?navref=cl_pb_nv_tb */
 public class FindSmallest {
+    /*
+     * T.C: O(nlogn)
+     * S.C: O(1)
+     */
     public int solve(int[] A, int B) {
         int n = A.length;
         Arrays.sort(A); // Sort the input array A in ascending order

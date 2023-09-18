@@ -4,7 +4,7 @@ import java.util.*;
 
 /* 
 Question Link: https://leetcode.com/problems/merge-intervals/ 
-
+Qs: https://www.scaler.com/academy/mentee-dashboard/class/47512/assignment/problems/61?navref=cl_tt_nv
 
 Problem Statement: Given a set of time intervals in any order, merge all overlapping 
 intervals into one and output the result which should have only mutually exclusive 
@@ -26,18 +26,17 @@ class Interval {
     }
 }
 
-// Java program to merge overlapping Intervals in
-// O(n Log n) time and O(1) extra space
+/*
+ * GFG Solution Link: https://www.geeksforgeeks.org/merging-intervals/
+ * 
+ * Function that takes a set of intervals, merges
+ * overlapping intervals and prints the result
+ */
 class MergeOverlappingIntervals {
 
     /*
-     * GFG Solution Link: https://www.geeksforgeeks.org/merging-intervals/
-     * Scale soln:
-     * https://www.scaler.com/academy/mentee-dashboard/class/47512/assignment/
-     * problems/61?navref=cl_tt_lst_sl
-     * 
-     * Function that takes a set of intervals, merges
-     * overlapping intervals and prints the result
+     * T.C: O(n Log n)
+     * S.C: O(1)
      */
     public static void mergeIntervals(Interval arr[]) {
 
@@ -59,7 +58,7 @@ class MergeOverlappingIntervals {
 
         // Traverse all input Intervals
         for (int i = 1; i < arr.length; i++) {
-            // If this is not first Interval and overlaps with the previous one
+            // If current Interval overlaps with the previous one
             if (arr[index].end >= arr[i].start) {
                 // Merge previous and current Intervals
                 arr[index].start = Math.min(arr[index].start, arr[i].start);

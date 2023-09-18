@@ -59,15 +59,14 @@ public class RotatedSortedArraySearch {
                     }
                 }
             }
-
             // If B present in 2nd part
-            if (B < A[0]) {
+            else if (B < A[0]) {
                 // Check if mid is in 1st part, move to 2nd part
                 if (A[mid] >= A[0]) {
                     low = mid + 1;
                 }
                 /*
-                 * Else mid in 2nd part,
+                 * else mid in 2nd part,
                  * do binary search in 2nd part
                  */
                 else {

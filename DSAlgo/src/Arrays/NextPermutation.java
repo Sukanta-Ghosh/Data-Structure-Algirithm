@@ -46,9 +46,8 @@ public class NextPermutation {
 
         /*
          * Step 2:
-         * Find index(j) of A[j] element which is greater than
-         * previous computed A[i] element
-         * and swap
+         * Find index(j) of A[j] element fom right side which is greater than
+         * previous computed A[i] element and swap
          */
         if (i >= 0) {
             int j = nums.length - 1;
@@ -61,7 +60,7 @@ public class NextPermutation {
 
         /*
          * Step 3: Reverse array from i + 1 th index to array end
-         * where no is swapped till the end of the array.
+         * where numbers are swapped till the end of the array.
          */
         reverse(nums, i + 1, nums.length - 1);
 

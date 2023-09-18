@@ -4,7 +4,6 @@ package Arrays;
 https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1 
 Scale Qs: https://www.scaler.com/academy/mentee-dashboard/class/47512/assignment/problems/47?navref=cl_tt_lst_sl
 */
-
 public class TrappingRainWater {
 
 	public static void main(String[] args) {
