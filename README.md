@@ -4,6 +4,7 @@
   - [ArrayRotation](DSAlgo/src/Arrays/ArrayRotation.java)
   - [PrefixSum](DSAlgo/src/Arrays/easy/PrefixSum.java)
   - [MergeOverlappingIntervals](DSAlgo/src/Arrays/MergeOverLappingIntervals.java)
+    - [MergeIntervals](DSAlgo/src/Arrays/MergeIntervals.java)
   - [Pick From Both Sides](DSAlgo/src/Arrays/PickFromBothSides.java)
   - [Kadane Algorithm](DSAlgo/src/Arrays/MaximumSubarraySum.java)
     - [Flip](DSAlgo/src/Arrays/Flip.java)
@@ -21,12 +22,34 @@
   - [Closest Min Max](DSAlgo/src/Arrays/ClosestMinMax.java)
   - [Maximum Subarray Sum](DSAlgo/src/Arrays/MaximumSubarraySum.java)
   - [Minimum Swaps](DSAlgo/src/Arrays/MinimumSwaps.java)
+  - Two Pointers
+    - [Subarray with given sum](DSAlgo/src/Arrays/SubarrayTargetSum.java)
+    - [Pairs with Given Difference](DSAlgo/src/Arrays/PairwithDiff.java)
+    - [Container with most water](DSAlgo/src/Arrays/ContainerMostWater.java)
+    - [Pairs with given sum](DSAlgo/src/Arrays/PairwithSum.java)
+    - [3 sum](DSAlgo/src/Arrays/ThreeSum.java)
+    - [Closest pair from sorted arrays](DSAlgo/src/Arrays/ClosestPairSortedArr.java)
+    - [Count Rectangle](DSAlgo/src/Arrays/CountRectangle.java)
+    - [Max Continuous Series of 1s](DSAlgo/src/Arrays/MaxContinuousSeriesOne.java)
 - String
 - Stack & Queue
 - Hashing
 - Binary Search
+  - [Peak Element](DSAlgo/src/BinarySearch/PeakElement.java)
+  - [Search Range](DSAlgo/src/BinarySearch/PeakElement.java)
+  - [Single Element in Sorted Array](DSAlgo/src/BinarySearch/SingleElementSortedArray.java)
+  - [Matrix Search](DSAlgo/src/BinarySearch/MatrixSearch.java)
+  - [Maximum height of staircase](DSAlgo/src/BinarySearch/MaxStairHeight.java)
+  - [Square Root of Integer](DSAlgo/src/BinarySearch/SquareRoorInt.java)
+  - [Rotated Sorted Array Search](DSAlgo/src/BinarySearch/RotatedSortedArraySearch.java)
+  - [Find Smallest](DSAlgo/src/BinarySearch/FindSmallest.java)
+  - [Special Integer](DSAlgo/src/BinarySearch/SpecialInteger.java)
+  - BS on answer
+    - [Painter's Partition](DSAlgo/src/BinarySearch/PainterPartition.java)
+      - [Aggresive Cows](DSAlgo/src/BinarySearch/AggresiveCows.java)
 - Linked List
-- Sorting & Searching
+- Sorting
+  - [Kth Smallest Element](DSAlgo/src/Sorting/KthSmallestElement.java)
 - Tree
 - [Dynamic Programming](DSAlgo/src/Dynamic_Programming_Library)
 

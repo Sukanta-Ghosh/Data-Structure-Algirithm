@@ -6,12 +6,15 @@ import java.util.HashMap;
 /* Qs: https://www.scaler.com/academy/mentee-dashboard/class/47540/assignment/problems/9323/?navref=cl_pb_nv_tb */
 public class PairwithDiff {
 
-    /* T.C: O(n) */
+    /*
+     * T.C: O(n)
+     * S.C: O(1)
+     */
     public int solve(int[] A, int B) {
         int n = A.length;
         Arrays.sort(A);
         /*
-         * i is first pointer ans starts from 0
+         * i is first pointer and starts from 0
          * j is second pointer and start from 1
          */
         int i = 0;

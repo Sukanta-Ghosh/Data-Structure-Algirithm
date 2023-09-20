@@ -1,1 +1,0 @@
-https://www.geeksforgeeks.org/difference-between-searching-and-sorting-algorithms/#:~:text=Searching%20Algorithms%20are%20designed%20to%20retrieve%20an%20element%20from%20any,Sequential%20Search%20and%20Interval%20Search.
