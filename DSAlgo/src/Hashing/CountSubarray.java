@@ -2,7 +2,11 @@ package Hashing;
 
 import java.util.HashSet;
 
-/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/47542/homework/problems/1226?navref=cl_tt_lst_sl */
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/47542/homework/problems/1226?navref=cl_tt_lst_sl 
+ * 
+ * Similar Qs: Longest Substring Without Repeat
+ * https://www.scaler.com/academy/mentee-dashboard/class/47544/homework/problems/161?navref=cl_tt_lst_sl
+*/
 public class CountSubarray {
     /*
      * T.C: O(n)

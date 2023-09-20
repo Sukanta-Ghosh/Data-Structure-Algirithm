@@ -34,6 +34,12 @@
 - String
 - Stack & Queue
 - Hashing
+  - [Longest Consecutive Sequence](DSAlgo/src/Hashing/LongestConsecutiveSequence.java)
+  - [Count Subarrays](DSAlgo/src/Hashing/CountSubarray.java)
+  - [MinDistancePair](DSAlgo/src/Hashing/MinDistancePair.java)
+  - [Sub-array with 0 sum](DSAlgo/src/Hashing/SubArrayZeroSum.java)
+  - [Sort Array in given Order](DSAlgo/src/Hashing/SortByGivenOrder.java)
+  - [Colorful Number](DSAlgo/src/Hashing/ColorfulNumber.java)
 - Binary Search
   - [Peak Element](DSAlgo/src/BinarySearch/PeakElement.java)
   - [Search Range](DSAlgo/src/BinarySearch/PeakElement.java)
