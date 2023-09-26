@@ -34,9 +34,9 @@ public class MedianOfStream {
 			 * 1. If maxminSizeDiff is greater than 1, then
 			 * maxHeap has more items than minHeap + 1 item,
 			 * so remove element from maxHeap to minHeap
-			 * 2. If maxminSizeDiff is greater than 1, then
-			 * maxHeap has more items than minHeap + 1 item,
-			 * so remove element from maxHeap to minHeap
+			 * 2. If maxminSizeDiff is less than 0, then
+			 * minHeap has more items than maxHeap + 1 item,
+			 * so remove element from minHeap to maxHeap
 			 */
 			int maxminSizeDiff = maxHeap.size() - minHeap.size();
 			if (maxminSizeDiff > 1) {

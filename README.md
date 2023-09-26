@@ -33,6 +33,20 @@
     - [Max Continuous Series of 1s](DSAlgo/src/Arrays/MaxContinuousSeriesOne.java)
 - String
 - Stack & Queue
+  - Stack
+    - [Balanced Paranthesis](DSAlgo/src/Stack_Queue/BalancedParanthesis.java)
+    - [Double Character Trouble](DSAlgo/src/Stack_Queue/DoubleCharacter.java)
+    - [Passing Game](DSAlgo/src/Stack_Queue/PassingGame.java)
+    - [Redundant Braces](DSAlgo/src/Stack_Queue/RedundantBraces.java)
+    - [Infix to Postfix](DSAlgo/src/Stack_Queue/InfixToPostfix.java)
+    - [Left Nearest Smaller Element](DSAlgo/src/Stack_Queue/LeftNearestSmallerElement.java)
+    - [Largest Rectangle in Histogram](DSAlgo/src/Stack_Queue/LargestRectangleHistogram.java)
+    - [MAX and MIN Subarray](DSAlgo/src/Stack_Queue/MaxMinDiffSubarray.java)
+    - [Sort stack using another stack](DSAlgo/src/Stack_Queue/SortStackUsingStack.java)
+  - Queue
+    - [Perfect Number](DSAlgo/src/Stack_Queue/PerfectNumber.java)
+    - [First non-repeating character](DSAlgo/src/Stack_Queue/FirstNonRepeatChar.java)
+    - [Sliding Window Maximum](DSAlgo/src/Stack_Queue/SlidingWindowMaximum.java)
 - Hashing
   - [Longest Consecutive Sequence](DSAlgo/src/Hashing/LongestConsecutiveSequence.java)
   - [Count Subarrays](DSAlgo/src/Hashing/CountSubarray.java)
@@ -57,6 +71,7 @@
 - Sorting
   - [Kth Smallest Element](DSAlgo/src/Sorting/KthSmallestElement.java)
 - Tree
+
 - [Dynamic Programming](DSAlgo/src/Dynamic_Programming_Library)
 
   - No group
@@ -91,5 +106,11 @@
     - Unique Binary Search Trees
 
 - Heap
+
+  - [Min & Max Heap](DSAlgo/src/Heap/MinMaxHeapDefine.java)
+  - [Running Median](DSAlgo/src/Heap/MedianOfStream.java)
+  - [K Places Apart](DSAlgo/src/Heap/KPlacesApart.java)
+  - [Ath largest element](DSAlgo/src/Heap/AthLargestElement.java)
+
 - Divide & Conquer
 - Greedy Algorithm

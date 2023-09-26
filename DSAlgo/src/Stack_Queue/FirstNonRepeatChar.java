@@ -47,7 +47,7 @@ public class FirstNonRepeatChar {
                 queue.poll();
             }
 
-            /* Naswer string logic */
+            /* Answer string logic */
             if (queue.size() == 0) {
                 sb.append("#");
             } else {

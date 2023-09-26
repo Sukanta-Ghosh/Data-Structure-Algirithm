@@ -9,7 +9,7 @@ public class PerfectNumber {
      * T.C: O(A)
      * S.C: O(A)
      */
-    public String solve(int A) {
+    public static String solve(int A) {
         // Edge Case
         if (A == 1)
             return "11";
@@ -63,5 +63,9 @@ public class PerfectNumber {
 
         /* Reverse the string and add into ans string and return */
         return ans + sb.reverse().toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(solve(4));
     }
 }
