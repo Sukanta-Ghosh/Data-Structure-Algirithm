@@ -33,7 +33,7 @@ public class RegularExpMaching {
          * DP State:
          * dpArr[i][j] => For i length string A, j length B string is matching or not
          */
-        // initialize 2D integer array with -1
+        // initialize 2D integer array with -1 to detect previously computed or not
         dpArr = new int[A.length() + 1][strB.toString().length() + 1];
         for (int[] x : dpArr) {
             Arrays.fill(x, -1);
@@ -50,11 +50,11 @@ public class RegularExpMaching {
         if (ns == 0 && np == 0) {
             return 1;
         }
-        /* If pattern empty, string length left then false */
+        /* If pattern empty, zero string length left, then return false(0) */
         if (np == 0) {
             return 0;
         }
-        /* If string empty, then we will check in pattern (*) present or not */
+        /* If matching string empty, then we will check in pattern (*) present or not */
         if (ns == 0) {
             for (int i = 0; i < np; i++) {
                 if (p.charAt(i) != '*') {

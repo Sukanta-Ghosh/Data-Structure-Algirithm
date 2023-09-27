@@ -10,6 +10,7 @@ public class CoinSumInfinite {
      */
     public int coinchange2(int[] A, int B) {
         int n = A.length;
+        int[] coinValues = A;
         int sum = B;
 
         /*
@@ -30,8 +31,9 @@ public class CoinSumInfinite {
                  * If A[i] amount coin is selected then no ways sum can be formed
                  * i - A[j] >= 0 check if sum possible or not
                  */
-                if (i - A[j] >= 0) {
-                    dpTable[i] = dpTable[i] + dpTable[i - A[j]];
+                int leftCapacity = i - coinValues[j];
+                if (leftCapacity >= 0) {
+                    dpTable[i] = dpTable[i] + dpTable[leftCapacity];
                     dpTable[i] %= 1000007;
                 }
             }

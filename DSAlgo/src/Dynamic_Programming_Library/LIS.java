@@ -19,7 +19,7 @@ public class LIS {
         /* First element LIS is 1 */
         dpTable[0] = 1;
 
-        /* Loop is starting from 1, as 0 len string LIS is 1 */
+        /* Loop is starting from 1 */
         for (int i = 1; i < n; i++) {
             int maxLen = 0;
             /* Check for all elements before ith element */
@@ -30,10 +30,8 @@ public class LIS {
             }
             /* maxLen + 1: 1 is added to include present element */
             dpTable[i] = maxLen + 1;
-        }
 
-        /* For every index check LIS */
-        for (int i = 0; i < n; i++) {
+            /* For every index check max LIS */
             ans = Math.max(ans, dpTable[i]);
         }
 

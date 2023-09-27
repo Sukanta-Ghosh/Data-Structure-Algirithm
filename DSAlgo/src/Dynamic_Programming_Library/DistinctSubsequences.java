@@ -32,19 +32,27 @@ public class DistinctSubsequences {
                  * 0, dp[i][j] = 0
                  */
                 else if (i == 0) {
-                    // continue
+                    // dp[i][j] = 0
                 }
                 /*
                  * If form string is empty, then we can choose 1 ways from choose string for any
-                 * type of string
+                 * type of string with 0 char selection
                  */
                 else if (j == 0) {
                     dpTable[i][j] = 1;
-                } else {
+                }
+                /* if i and j != 0 */
+                else {
+
+                    // include previous A char result
+                    dpTable[i][j] = dpTable[i - 1][j];
+
+                    /*
+                     * if i - 1 th char in A and B is same, then add/include dpTable[i - 1][j - 1]
+                     * in dpTable[i][j]
+                     */
                     if (A.charAt(i - 1) == B.charAt(j - 1)) {
                         dpTable[i][j] = dpTable[i - 1][j - 1] + dpTable[i - 1][j];
-                    } else {
-                        dpTable[i][j] = dpTable[i - 1][j];
                     }
                 }
             }

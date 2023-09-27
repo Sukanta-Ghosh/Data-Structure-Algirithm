@@ -26,7 +26,7 @@ public class LongestFibSubSequence {
         int[][] dpTable = new int[n][n];
 
         /*
-         * k represents 3rd fin element which we want to find by adding i and j
+         * k represents 3rd fib element which we want to find by adding i and j.
          * j represents 2nd fib element
          */
         for (int k = 0; k < n; k++) {
@@ -34,18 +34,18 @@ public class LongestFibSubSequence {
                 /*
                  * A[i] + A[j] = A[k], so replace A[i] with A[k] - A[j]
                  * (i) check if it is smaller than 2nd fib element(A[j])
-                 * (ii) check if A[j] - A[k] element index is present in map or not
+                 * (ii) check if A[k] - A[j] element index is present in map or not
                  */
                 if (A[k] - A[j] < A[j] && map.containsKey(A[k] - A[j])) {
                     // Find index of A[i]
                     int i = map.get(A[k] - A[j]);
                     /*
                      * B/w element j and k, total fib series can be formed
-                     * 1+ for k idx element and total fib series b/w i and j
+                     * 1 + for including k idx element and total fib series b/w i and j
                      */
                     dpTable[j][k] = 1 + dpTable[i][j];
 
-                    /* +2 for including not including forst 2 elements */
+                    /* + 2 for including first 2 elements */
                     ans = Math.max(ans, dpTable[j][k] + 2);
                 }
             }

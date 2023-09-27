@@ -1,5 +1,6 @@
 package Dynamic_Programming_Library;
 
+/* Qs check in DP 4: Applications of Knapsack notes in DP */
 public class CoinSumPermutation {
     /*
      * Note: Varity of Unbounded Knapsack
@@ -16,7 +17,7 @@ public class CoinSumPermutation {
          * dp[i] => In how many combinations we can pay sum i
          */
         int[] dpTable = new int[sum + 1];
-        /* ) sum can be as 1 way so dp[0] = 1 */
+        /* 0 sum can be as 1 way so dp[0] = 1 */
         dpTable[0] = 1;
 
         /*

@@ -9,6 +9,8 @@ public class CatalanNumber {
      * S.C: O(n)
      * Catalan Number: Recurrence relation =>
      * T(n) = T(0) * T(n - 1) + T(1) * T(n - 2) + .... + T(n - 1) * T(0)
+     * 
+     * T(n, p) = Summation of (T(p) * T(n - p - 1))
      */
     public int catalanNumber(int A) {
         int mod = 1000000007;

@@ -75,11 +75,12 @@ public class FlipArray {
                         if (dpTable[i - 1][restSum] == Integer.MAX_VALUE) {
                             include = Integer.MAX_VALUE;
                         } else {
+                            /* + 1 to include element */
                             include = dpTable[i - 1][restSum] + 1;
                         }
                     }
 
-                    /* Set dp value min b/w exlude and include present element */
+                    /* Set dp value min b/w exclude and include present element */
                     dpTable[i][j] = Math.min(include, exclude);
                 }
             }

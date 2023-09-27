@@ -1,11 +1,43 @@
 package Dynamic_Programming_Library;
 
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/70873/assignment/problems/4438?navref=cl_tt_lst_sl */
 public class LCS {
 
     /*
+     * Iterative Approach
+     * T.C: O(n * m)
+     * S.C: O(n * m)
+     */
+    public int solve(String A, String B) {
+        int na = A.length();
+        int nb = B.length();
+
+        /*
+         * DP State:
+         * dp[i][j]: Longest common subsequence of string s1 from 0-i,
+         * to string s2 from 0-j
+         */
+        int[][] dpTable = new int[na][nb];
+
+        int i, j;
+        for (i = 0; i <= na; i++) {
+            for (j = 0; j <= nb; j++) {
+                // Base condition
+                if (i == 0 || j == 0)
+                    dpTable[i][j] = 0;
+                else if (A.charAt(i - 1) == B.charAt(j - 1))
+                    dpTable[i][j] = dpTable[i - 1][j - 1] + 1;
+                else
+                    dpTable[i][j] = Math.max(dpTable[i - 1][j], dpTable[i][j - 1]);
+            }
+        }
+        return dpTable[na][nb];
+    }
+
+    /*
      * Recursive Approach
-     * T.C: O()
-     * S.C:
+     * T.C: O(n * m)
+     * S.C: O(n * m)
      */
     public int solveRecursive(String A, String B) {
         int na = A.length();
@@ -42,34 +74,6 @@ public class LCS {
                     lcs(s1, s2, i, j - 1, dpTable));
         }
 
-    }
-
-    /*
-     * Iterative Approach
-     * T.C: O()
-     * S.C:
-     */
-    public int solve(String A, String B) {
-        int na = A.length();
-        int nb = B.length();
-
-        /*
-         * DP State:
-         * dp[i][j]: Longest common subsequence of string s1 from 0-i,
-         * to string s2 from 0-j
-         */
-        int[][] dpTable = new int[na][nb];
-
-        int i = 0;
-        int j = 0;
-
-        while (i < na && j < nb) {
-            if (A.charAt(i) == B.charAt(j)) {
-                dpTable[i][j] = 1;
-            }
-        }
-
-        return 0;
     }
 
 }

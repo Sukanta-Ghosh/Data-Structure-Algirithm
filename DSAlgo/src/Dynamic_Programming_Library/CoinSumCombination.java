@@ -1,5 +1,6 @@
 package Dynamic_Programming_Library;
 
+/* Qs check in DP 4: Applications of Knapsack notes in DP */
 public class CoinSumCombination {
     /*
      * Note: Varity of Unbounded Knapsack

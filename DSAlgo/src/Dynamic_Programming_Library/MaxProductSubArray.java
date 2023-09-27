@@ -27,16 +27,17 @@ public class MaxProductSubArray {
      * max_product, min_product = min_product, max_product
      * max_product = max(A[i], max_product * A[i])
      */
-    public int maxProduct(final int[] A) {
+    public static int maxProduct(final int[] A) {
         int n = A.length;
         int minVal = A[0];
         int maxVal = A[0];
         int maxProduct = A[0];
 
         for (int i = 1; i < n; i++) {
-            // When multiplied by -ve number,
-            // maxVal becomes minVal
-            // and minVal becomes maxVal.
+            /*
+             * When multiplied by -ve number, maxVal becomes minVal
+             * and minVal becomes maxVal.
+             */
             if (A[i] < 0) {
                 int temp = maxVal;
                 maxVal = minVal;
@@ -51,5 +52,11 @@ public class MaxProductSubArray {
         }
 
         return maxProduct;
+    }
+
+    public static void main(String[] args) {
+        int[] A = { 4, 2, -5, 1 };
+
+        System.out.println(maxProduct(A));
     }
 }

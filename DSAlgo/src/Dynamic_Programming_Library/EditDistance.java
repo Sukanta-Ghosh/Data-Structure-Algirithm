@@ -1,5 +1,6 @@
 package Dynamic_Programming_Library;
 
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/70873/assignment/problems/21?navref=cl_tt_nv */
 public class EditDistance {
     /*
      * Recursive Solution
@@ -47,10 +48,10 @@ public class EditDistance {
         } else {
             /*
              * Operations on String s1, len l1
-             * Insert: minOperation(l1, l2 - 1)=> String s2 len will be decreased by 1 as
+             * Insert: minOperation(l1, l2 - 1) => String s2 len will be decreased by 1 as
              * added char is equal to l2 char of string s2.
-             * Replace: minOperation(l1 - 1, l2 - 1)=> Both strings len will be decreased
-             * Delete: minOperation(l1 - 1, l2)=> String s1 char is deleted, so l1 len will
+             * Replace: minOperation(l1 - 1, l2 - 1) => Both strings len will be decreased
+             * Delete: minOperation(l1 - 1, l2) => String s1 char is deleted, so l1 len will
              * be decreased by 1
              */
             int ifInsert = minOperation(s1, s2, l1, l2 - 1);
