@@ -3,48 +3,68 @@ package Greedy_Algorithm;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/70869/assignment/problems/35883/?navref=cl_pb_nv_tb */
 class FractionalKnapsack {
     static class Items {
-        int val, wt;
-        Double cost;
+        int value, weight;
+        Double costPerUnit;
 
-        public Items(int val, int wt) {
-            this.val = val;
-            this.wt = wt;
-            cost = (double) ((double) val / (double) wt);
+        public Items(int value, int weight) {
+            this.value = value;
+            this.weight = weight;
+            costPerUnit = (double) ((double) value / (double) weight);
         }
     }
 
-    static double func(int[] val, int[] wt, int n, int k) {
-        Items[] item = new Items[n];
+    /*
+     * T.C: O(nlogn)
+     * S.C: O(n)
+     */
+    public static int solve(int[] A, int[] B, int C) {
+        int n = A.length;
+        int[] values = A;
+        int[] weights = B;
+        int capacity = C;
+
+        /* Define array of class */
+        Items[] items = new Items[n];
         for (int i = 0; i < n; i++) {
-            item[i] = new Items(val[i], wt[i]);
+            items[i] = new Items(values[i], weights[i]);
         }
 
         // Sort items array descending order
-        Arrays.sort(item, new Comparator<Items>() {
+        Arrays.sort(items, new Comparator<Items>() {
             @Override
-            public int compare(Items o1, Items o2) {
-                return o2.cost.compareTo(o1.cost);
+            public int compare(Items i1, Items i2) {
+                return i2.costPerUnit.compareTo(i1.costPerUnit);
             }
         });
 
         double totalValue = 0;
-        for (Items i : item) {
-            int value = i.val;
-            int weight = i.wt;
+        /* Iterate over Items array in descending order */
+        for (Items it : items) {
+            int presentValue = it.value;
+            int presentWeight = it.weight;
 
-            if (k - weight >= 0) {
-                k -= weight;
-                totalValue += (value * 100);
-            } else {
-                double fraction = (double) k / weight;
-                totalValue += (value * fraction * 100);
-                k -= (weight * fraction);
+            /* If present weight is selected */
+            int leftCapacity = capacity - presentWeight;
+            if (leftCapacity >= 0) {
+                // Decrease capacity
+                capacity -= presentWeight;
+
+                // Add to total value
+                totalValue += (presentValue * 100);
+            } else { // select fractional weight
+                /*
+                 * Based on left capacity evaluate total cost with
+                 * costPerUnit
+                 */
+                totalValue += (capacity * it.costPerUnit * 100);
                 break;
             }
         }
-        return totalValue;
+
+        return (int) totalValue;
     }
 
     public static void main(String[] args) {
@@ -55,9 +75,8 @@ class FractionalKnapsack {
         int[] val = { 16, 3, 3, 6, 7, 8, 17, 13, 7 };
         int[] wt = { 3, 10, 9, 18, 17, 17, 6, 16, 13 };
         int capacity = 11;
-        int n = val.length;
 
-        System.out.println(func(val, wt, n, capacity));
+        System.out.println(solve(val, wt, capacity));
 
     }
 }

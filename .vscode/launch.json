@@ -6,6 +6,90 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MaxProductSubArray",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming_Library.MaxProductSubArray",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "MinMaxHeapDefine",
+      "request": "launch",
+      "mainClass": "Heap.MinMaxHeapDefine",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "PerfectNumber",
+      "request": "launch",
+      "mainClass": "Stack_Queue.PerfectNumber",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "SpecialInteger",
+      "request": "launch",
+      "mainClass": "BinarySearch.SpecialInteger",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "LongestFibSubSequence",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming_Library.LongestFibSubSequence",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch MaximumSumValue",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming_Library.MaximumSumValue",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch WaysToDecode",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming_Library.WaysToDecode",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch TwoDArrayPFSum",
+      "request": "launch",
+      "mainClass": "Arrays.TwoDArrayPFSum",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch Compare",
+      "request": "launch",
+      "mainClass": "Arrays.Compare",
+      "projectName": "Competitive-Programming"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch FindDistinctFactors",
+      "request": "launch",
+      "mainClass": "Arrays.FindDistinctFactors",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
+      "name": "Launch Compare",
+      "request": "launch",
+      "mainClass": "Arrays.Compare",
+      "projectName": "DSAlgo"
+    },
+    {
+      "type": "java",
       "name": "Launch QueueusingArray",
       "request": "launch",
       "mainClass": "Stack_Queue.QueueusingArray",

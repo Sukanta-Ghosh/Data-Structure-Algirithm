@@ -1,4 +1,4 @@
-package Misc;
+package BinarySearch;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,6 +18,7 @@ public class ThreeSumZero {
             return res;
         }
 
+        // Sort the arraylist
         Collections.sort(A);
         int n = A.size();
 
@@ -37,6 +38,7 @@ public class ThreeSumZero {
                 int num = A.get(mid) + A.get(high);
 
                 if (num == sum) {
+                    /* Add elements to temp list array */
                     temp.add(A.get(low));
                     temp.add(A.get(mid));
                     temp.add(A.get(high));

@@ -2,7 +2,7 @@
 
 - Arrays
   - [ArrayRotation](DSAlgo/src/Arrays/ArrayRotation.java)
-  - [PrefixSum](DSAlgo/src/Arrays/easy/PrefixSum.java)
+  - [PrefixSum](DSAlgo/src/Arrays/PrefixSum.java)
   - [MergeOverlappingIntervals](DSAlgo/src/Arrays/MergeOverLappingIntervals.java)
     - [MergeIntervals](DSAlgo/src/Arrays/MergeIntervals.java)
   - [Pick From Both Sides](DSAlgo/src/Arrays/PickFromBothSides.java)
@@ -64,12 +64,15 @@
   - [Rotated Sorted Array Search](DSAlgo/src/BinarySearch/RotatedSortedArraySearch.java)
   - [Find Smallest](DSAlgo/src/BinarySearch/FindSmallest.java)
   - [Special Integer](DSAlgo/src/BinarySearch/SpecialInteger.java)
+  - [3 sum zero](DSAlgo/src/BinarySearch/ThreeSumZero.java)
   - BS on answer
     - [Painter's Partition](DSAlgo/src/BinarySearch/PainterPartition.java)
       - [Aggresive Cows](DSAlgo/src/BinarySearch/AggresiveCows.java)
 - Linked List
 - Sorting
+  - [Custom Sorting Class](DSAlgo/src/Sorting/Compare.java)
   - [Kth Smallest Element](DSAlgo/src/Sorting/KthSmallestElement.java)
+  - [Inversion count in an array](DSAlgo/src/Sorting/InversionCountinArray.java)
 - Tree
 
 - [Dynamic Programming](DSAlgo/src/Dynamic_Programming_Library)
@@ -94,7 +97,6 @@
     - [Cutting Rod](DSAlgo/src/Dynamic_Programming_Library/CuttingRod.java)
     - [Coin Sum Permutation](DSAlgo/src/Dynamic_Programming_Library/CoinSumPermutation.java)
     - [Coin Sum Combination](DSAlgo/src/Dynamic_Programming_Library/CoinSumCombination.java)
-  - [Fractional Knapsack](DSAlgo/src/Dynamic_Programming_Library/FractionalKnapsack.java)
   - [Longest Common Subsequence](DSAlgo/src/Dynamic_Programming_Library/LCS.java)
     - Longest Panlindromic Subsequence
     - [Edit Distance](DSAlgo/src/Dynamic_Programming_Library/EditDistance.java)
@@ -114,3 +116,4 @@
 
 - Divide & Conquer
 - Greedy Algorithm
+  - [Fractional Knapsack](DSAlgo/src/Greedy_Algorithm/FractionalKnapsack.java)

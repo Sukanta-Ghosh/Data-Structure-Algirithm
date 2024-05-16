@@ -47,6 +47,7 @@ public class PainterPartition {
             }
         }
 
+        /* Multiply by B to get total time */
         return (int) (ans * (long) B % mod);
     }
 
