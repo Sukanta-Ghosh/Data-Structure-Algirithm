@@ -1,9 +1,12 @@
 package Arrays;
 
-/* Sacle Qs: https://www.scaler.com/academy/mentee-dashboard/class/40558/homework/problems/67?navref=cl_tt_lst_sl */
+/* Practise Link: https://www.scaler.com/academy/mentee-dashboard/class/40558/homework/problems/67?navref=cl_tt_lst_sl */
 public class N3RepeatNo {
     /*
-     * At max 2 majority elements can be present
+     * Type: Majority Element
+     * At max 2 majority elements can be present with more than N/3 repeatation
+     * T.C: O(n)
+     * S.C: O(1)
      */
     public int repeatedNumber(int[] A) {
         int n = A.length;
@@ -18,11 +21,11 @@ public class N3RepeatNo {
 
         // Iterate through array
         for (int i = 0; i < n; i++) {
-            // Count element 1 freq if element 1 matches with current ele
+            // Count element 1 freq if element 1 matches with current element
             if (ele1 == A[i]) {
                 freq1++;
             }
-            // Count element 1 freq if element 2 matches with current ele
+            // Count element 1 freq if element 2 matches with current element
             else if (ele2 == A[i]) {
                 freq2++;
             }
@@ -43,7 +46,7 @@ public class N3RepeatNo {
                 freq2 = 1;
             }
             /*
-             * If current element dont match with both element and
+             * If current element dont match with any element and
              * any one element frequency is not zero then decrease both element frequency
              */
             else {

@@ -6,7 +6,7 @@ public class PeakElement {
      * T.C: O(logn)
      * S.C: O(1)
      */
-    public int solve(int[] A) {
+    public static int solve(int[] A) {
         int n = A.length;
 
         // Edge Cases
@@ -22,14 +22,15 @@ public class PeakElement {
             return A[n - 1];
         }
 
+        // Binary Search
         int low = 0;
         int high = n - 1;
-        int mid = -1;
+        int mid = -1; // if no peak element
         while (low <= high) {
             mid = (low + high) / 2;
 
             /* Case 1: A[mid - 1] <= A[mid] >= A[mid + 1] */
-            if (A[mid - 1] <= A[mid] && A[mid + 1] <= A[mid]) {
+            if (A[mid - 1] <= A[mid] && A[mid] >= A[mid + 1]) {
                 return A[mid];
             }
             /* Case 2: A[mid] < A[mid + 1] go to right */
@@ -37,11 +38,18 @@ public class PeakElement {
                 low = mid + 1;
             }
             /* Case 3: A[mid] < A[mid - 1] go to left */
-            else if (A[mid] < A[mid - 1]) {
+            else if (A[mid - 1] > A[mid]) {
                 high = mid - 1;
             }
         }
 
+        // return -1
         return mid;
+    }
+
+    public static void main(String[] args) {
+        int[] A = { 5, 17, 100, 11 };
+
+        System.out.println(solve(A));
     }
 }

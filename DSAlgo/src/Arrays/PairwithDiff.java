@@ -7,11 +7,12 @@ import java.util.HashMap;
 public class PairwithDiff {
 
     /*
-     * T.C: O(n)
+     * T.C: O(nlogn)
      * S.C: O(1)
      */
     public int solve(int[] A, int B) {
         int n = A.length;
+        // Sort the array
         Arrays.sort(A);
         /*
          * i is first pointer and starts from 0
@@ -32,7 +33,9 @@ public class PairwithDiff {
                     map.put(A[i], A[j]);
                     i++;
                     j++;
-                } else { // else increment second pointer j
+                }
+                // else increment second pointer j
+                else {
                     j++;
                 }
 

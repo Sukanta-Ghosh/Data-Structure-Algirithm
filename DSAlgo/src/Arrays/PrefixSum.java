@@ -16,7 +16,7 @@ public class PrefixSum {
      * prefixSum[] of the same size, such that the value of prefixSum[i] is arr[0] +
      * arr[1] + arr[2] … arr[i].
      */
-    static int[] preSum(int arr[], int n) {
+    static int[] prefixSum(int arr[], int n) {
 
         int prefix_sum[] = new int[n];
 
@@ -33,7 +33,7 @@ public class PrefixSum {
      * Given an array arr[] of size n. Given Q queries and in each query given L and
      * R, print sum of array elements from index L to R.
      */
-    static int getSum(int prefix_sum[], int l, int r) {
+    static int rangeSum(int prefix_sum[], int l, int r) {
         if (l != 0)
             return prefix_sum[r] - prefix_sum[l - 1];
         else
@@ -41,8 +41,13 @@ public class PrefixSum {
     }
 
     /**
-     * Equilibrium Point(Efficient Method) || Time: O(n) || Space: O(1) ||
-     * Application 2 || Practise_Link:
+     * Application 2:
+     * Equilibrium Point(Efficient Method)
+     * Time: O(n) || Space: O(1)
+     * 
+     * Scale:
+     * https://www.scaler.com/academy/mentee-dashboard/class/40550/assignment/problems/12826?navref=cl_tt_lst_nm
+     * GFG Link:
      * https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
      * 
      * QS. Given an array A of n positive numbers. The task is to find the first
@@ -114,10 +119,10 @@ public class PrefixSum {
         // Prefix Sum Array
         int arr[] = { 2, 8, 3, 9, 6, 5, 4 }, n = 7;
 
-        int prefix_sum[] = preSum(arr, n);
+        int prefix_sum[] = prefixSum(arr, n);
 
-        System.out.println(getSum(prefix_sum, 1, 3)); // 20
-        System.out.println(getSum(prefix_sum, 0, 2)); // 13
+        System.out.println(rangeSum(prefix_sum, 1, 3)); // 20
+        System.out.println(rangeSum(prefix_sum, 0, 2)); // 13
 
         // Equilibrium Point
         int arr1[] = { 3, 4, 8, -9, 20, 6 }, n1 = 6;

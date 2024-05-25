@@ -4,7 +4,7 @@ package Dynamic_Programming_Library;
 public class Fibonacci {
 
     /*
-     * Recursive:Memorization:Top-down
+     * Recursive: Memorization: Top-down
      * T.C: O(n)
      * S.C: O(n)
      */
@@ -27,6 +27,6 @@ public class Fibonacci {
 
         int[] dpTable = new int[n + 1];
 
-        System.out.println(fibRecursive(n, dpTable));
+        fibRecursive(n, dpTable);
     }
 }

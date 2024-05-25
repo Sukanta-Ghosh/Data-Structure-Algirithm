@@ -38,7 +38,7 @@ public class ThreeSum {
                 int sum = A[i] + A[l] + A[r];
 
                 /*
-                 * check if difference b/w sum and target B
+                 * check if difference b/w sum and target B is
                  * less than minSum and target B, update minSum with sum
                  */
                 if (Math.abs(B - sum) < Math.abs(minSum - B)) {

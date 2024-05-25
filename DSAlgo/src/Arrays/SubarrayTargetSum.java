@@ -8,6 +8,7 @@ public class SubarrayTargetSum {
      */
     public int[] solve(int[] A, int B) {
         int n = A.length;
+        /* Initialize both pointer from 0 */
         int fPointer = 0;
         int sPointer = 0;
         int subArraySum = A[0];

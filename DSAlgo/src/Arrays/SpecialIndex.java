@@ -8,10 +8,12 @@ public class SpecialIndex {
      */
     public int solve(int[] A) {
         int n = A.length;
+        int specialIdxs = 0;
+
         int[] pfEven = new int[n];
         int[] pfOdd = new int[n];
 
-        // Sum of Even indices array elements
+        // Prefix Sum of Even indices array elements
         pfEven[0] = A[0];
         for (int i = 1; i < n; i++) {
             if (i % 2 == 0) {
@@ -21,7 +23,7 @@ public class SpecialIndex {
             }
         }
 
-        // Sum of Odd indices array elements
+        // Prefix Sum of Odd indices array elements
         pfOdd[0] = 0;
         for (int i = 1; i < n; i++) {
             if (i % 2 != 0) {
@@ -31,15 +33,16 @@ public class SpecialIndex {
             }
         }
 
-        int c = 0;
+        /* Iterate through array to find special index */
         for (int i = 0; i < n; i++) {
             /*
-             * If i in special index element
+             * If i is special index element
              * Here when i is deleted, right side even index change to odd index
              * and vice versa.
+             * 
+             * So, find sumEven and sumOdd for right side indices
              */
             int sumEven = pfOdd[n - 1] - pfOdd[i];
-
             int sumOdd = pfEven[n - 1] - pfEven[i];
 
             /*
@@ -51,12 +54,12 @@ public class SpecialIndex {
                 sumOdd += pfOdd[i - 1];
             }
 
-            // If both are matched then ith inde is special index
+            // If both are matched then i th index is special index
             if (sumEven == sumOdd) {
-                c++;
+                specialIdxs++;
             }
         }
 
-        return c;
+        return specialIdxs;
     }
 }

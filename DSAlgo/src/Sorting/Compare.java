@@ -14,7 +14,12 @@ import java.util.List;
 public class Compare {
 
     public static void main(String[] args) {
-        // Using Annonymus Class
+        // Testing
+        Integer[] arr = new Integer[] { 39, 13, 15, 19, 12, 10 };
+        String[] strArr = new String[] { "Ram", "Sam", "Dhan" };
+        List<Integer> list = Arrays.asList(arr);
+
+        // Using Annonymus Class: Both for Array and Collection
         Comparator<Integer> comp = new Comparator<Integer>() {
 
             @Override
@@ -28,6 +33,7 @@ public class Compare {
                 return -1;
             }
         };
+        Collections.sort(list, comp);
 
         // Using Lambda Expression
         Comparator<Integer> compl = (o1, o2) -> {
@@ -37,17 +43,20 @@ public class Compare {
             }
             return -1;
         };
-
-        // Testing
-        Integer[] arr = new Integer[] { 39, 13, 15, 19, 12, 10 };
-        List<Integer> list = Arrays.asList(arr);
         Collections.sort(list, compl);
+
+        // Descending Order: Using in Place Lambda Expression
+        Collections.sort(list, (i1, i2) -> i2 - i1);
 
         for (Integer l : list) {
             System.out.print(l + " ");
         }
 
-        Collections.sort(list, comp);
+        // Array Custom Sorting
+        Arrays.sort(arr, (a, b) -> a - b);
+
+        // Using compareTo method: Ascending order
+        Arrays.sort(strArr, (s1, s2) -> s1.compareTo(s2));
 
     }
 }

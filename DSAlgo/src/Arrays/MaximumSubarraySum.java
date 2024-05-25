@@ -16,10 +16,41 @@ public class MaximumSubarraySum {
 	 * T.C: O(n)
 	 * S.c: O(1)
 	 */
-	static int kadaneAlgorithm(int[] arr, int n) {
+	static int kadaneAlgorithm(int[] A, int n) {
+		// Take maxSum as min value
+		int maxSum = Integer.MIN_VALUE;
+		int currentSum = 0;
+
+		for (int i = 0; i < A.length; i++) {
+			// currentSum is recent element
+			currentSum += A[i];
+			/*
+			 * Find max b/w existing maxSum and currentSum,
+			 * if currentSum is greater, then include current A[i]
+			 */
+			maxSum = Math.max(maxSum, currentSum);
+
+			/*
+			 * if currentSum is less than 0, then reset currentSum
+			 * then discard array elements till now in maxSum
+			 */
+			if (currentSum < 0) {
+				currentSum = 0;
+			}
+		}
+		return maxSum;
+	}
+
+	/*
+	 * Kadane's Algorithm
+	 * Method 3 : Less line code
+	 * T.C: O(n)
+	 * S.c: O(1)
+	 */
+	static int kadaneAlgorithm_Method2(int[] arr, int n) {
 
 		int currSum = arr[0];
-		int maxSum = currSum;
+		int maxSum = arr[0];
 
 		for (int i = 1; i < n; i++) {
 			/*
@@ -28,21 +59,14 @@ public class MaximumSubarraySum {
 			 */
 			currSum = Math.max(currSum + arr[i], arr[i]);
 			maxSum = Math.max(currSum, maxSum);
-			/*
-			 * //or logic
-			 * sum += A[i];
-			 * maxSum = Math.max(maxSum, sum);
-			 * if(sum < 0){
-			 * sum = 0;
-			 * }
-			 */
 		}
 		return maxSum;
 	}
 
 	public static void main(String[] args) {
 
-		int[] arr = { -3, 8, -2, 4, -5, 6 };
+		// int[] arr = { -3, 8, -2, 4, -5, 6 };
+		int[] arr = { -2, -3, -1, -4, -6 };
 		int n = arr.length;
 
 		System.out.println(kadaneAlgorithm(arr, n)); // 11

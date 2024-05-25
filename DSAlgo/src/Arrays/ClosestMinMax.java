@@ -32,10 +32,12 @@ public class ClosestMinMax {
          * overall based on that.
          */
         for (int i = 0; i < A.length; i++) {
-            if (A[i] == min_ele)
-                min_Index = Math.max(min_Index, i);
-            if (A[i] == max_ele)
-                max_Index = Math.max(max_Index, i);
+            if (A[i] == min_ele) {
+                min_Index = i;
+            }
+            if (A[i] == max_ele) {
+                max_Index = i;
+            }
 
             if (min_Index != -1 && max_Index != -1) {
                 int len = Math.abs(max_Index - min_Index) + 1;

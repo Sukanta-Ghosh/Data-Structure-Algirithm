@@ -1,17 +1,67 @@
 package Arrays;
 
 /* Practise Link
+https://www.scaler.com/academy/mentee-dashboard/class/47512/assignment/problems/47?navref=cl_tt_lst_sl
 https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1 
-Scale Qs: https://www.scaler.com/academy/mentee-dashboard/class/47512/assignment/problems/47?navref=cl_tt_lst_sl
 */
 public class TrappingRainWater {
 
-	public static void main(String[] args) {
+	/*
+	 * Method: Most Efficient
+	 * T.C: O(n)
+	 * S.C: O(1)
+	 */
+	public int trap(final int[] A) {
+		int n = A.length;
+		int totalWater = 0;
 
-		int[] arr = { 5, 0, 6, 2, 3 };
-		int n = arr.length;
+		/*
+		 * Initialize variables left and right to point to the start and end of the
+		 * input array A. left and right acts as two pointer
+		 */
+		int left = 0;
+		int right = n - 1;
 
-		System.out.println(getWaterEffic(arr, n));
+		/*
+		 * maxleft and maxRight to store the maximum height seen from
+		 * the left and right side
+		 */
+		int maxleft = 0, maxright = 0;
+
+		while (left <= right) {
+			/*
+			 * If height of left side is lower, calculate height of water
+			 * trapped in left bin
+			 * else calculate for right bin
+			 */
+			if (A[left] <= A[right]) {
+				/*
+				 * This left index wont store any water as there is no index towards
+				 * the left whose height is greater than this.
+				 * 
+				 * If A[left] >= maxleft then, update maxleft
+				 * else A[left] is smaller than maxLeft, so update totalWater
+				 */
+				if (A[left] >= maxleft) {
+					maxleft = A[left];
+				} else {
+					totalWater += maxleft - A[left];
+				}
+				left++;
+			} else {
+				/*
+				 * This right index wont store any water as there is no index towards
+				 * the right whose height is greater than this.
+				 */
+				if (A[right] >= maxright) {
+					maxright = A[right];
+				} else {
+					totalWater += maxright - A[right];
+				}
+				right--;
+			}
+		}
+		return totalWater;
 	}
 
 	// Method 2 : Efficient
@@ -77,5 +127,13 @@ public class TrappingRainWater {
 			res += Math.min(lmax, rmax) - arr[i];
 		}
 		return res;
+	}
+
+	public static void main(String[] args) {
+
+		int[] arr = { 5, 0, 6, 2, 3 };
+		int n = arr.length;
+
+		System.out.println(getWaterEffic(arr, n));// 6
 	}
 }

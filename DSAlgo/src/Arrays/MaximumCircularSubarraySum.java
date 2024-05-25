@@ -10,26 +10,30 @@ public class MaximumCircularSubarraySum {
 	// Auxiliary Space: O(1)
 	static int maxCircularSumEffic(int[] arr, int n) {
 
-		// If all values are negative, then this code will return maximum sum
+		/* If all values are negative, then normalMaxSum() will return maximum sum */
 		int maxNormal = normalMaxSum(arr, n);
 		if (maxNormal < 0)
 			return maxNormal;
 
 		/*
-		 * Circular Sum: For this we need to find Minimum sum subarray(which will be the
-		 * middle elements of the array) and subtract that sum from total array sum of
-		 * normal array || Maximum sum in a inverted array is equal to find minimum sum
-		 * in a normal array, so instead of subtracting we are adding the minimum sum
-		 * with total sum of the array
+		 * Circular Sum:
+		 * For this we need to find Minimum sum subarray and subtract that sum from
+		 * total array sum of normal array.
 		 */
-		int arraySum = 0;
+		int totalArrSum = 0;
 		for (int i = 0; i < n; i++) {
-			arraySum += arr[i];
+			totalArrSum += arr[i];
+			// inverting the whole array
 			arr[i] = -arr[i];
 		}
-		int maxCircular = arraySum + normalMaxSum(arr, n);
+		/*
+		 * Maximum sum in a inverted array(-ve) is equal to find minimum sum
+		 * in a normal array, so instead of subtracting we are adding the minimum sum
+		 * with total sum of the array.
+		 */
+		int maxCircularSum = totalArrSum + normalMaxSum(arr, n);
 
-		return Math.max(maxNormal, maxCircular);
+		return Math.max(maxNormal, maxCircularSum);
 	}
 
 	// Kadane's Algorithm
@@ -47,7 +51,8 @@ public class MaximumCircularSubarraySum {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 8, -4, 3, -5, 4 };
+		// int[] arr = { 8, -4, 3, -5, 4 };
+		int[] arr = { 1, -2, 3, -2 };
 		int n = arr.length;
 
 		System.out.println(maxCircularSumEffic(arr, n));

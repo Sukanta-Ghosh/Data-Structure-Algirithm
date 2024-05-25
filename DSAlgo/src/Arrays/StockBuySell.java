@@ -2,16 +2,27 @@ package Arrays;
 
 public class StockBuySell {
 
-	public static void main(String[] args) {
+	/*
+	 * Topic: Best Time to Buy and Sell Stock I
+	 * https://www.scaler.com/academy/mentee-dashboard/class/40552/homework/problems
+	 * /14/?navref=cl_pb_nv_tb
+	 * Leetcode Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+	 * Explanation: https://takeuforward.org/data-structure/stock-buy-and-sell/
+	 */
+	static int maxProfit_1(int[] price, int n) {
 
-		int[] price = { 1, 5, 3, 8, 12 };
-		// int[] price = { 7, 1, 5, 3, 6, 4 };
-		int n = price.length;
+		int maxProfit = 0;
+		int minPrice = price[0];
 
-		System.out.println(maxProfit_2(price, n));
+		for (int i = 1; i < n; i++) {
+			minPrice = Math.min(minPrice, price[i]);
+			maxProfit = Math.max(maxProfit, price[i] - minPrice);
+		}
+		return maxProfit;
 	}
 
 	/*
+	 * Topic: Best Time to Buy and Sell Stock II
 	 * Leetcode: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 	 */
 	static int maxProfit_2(int[] price, int n) {
@@ -29,19 +40,24 @@ public class StockBuySell {
 	}
 
 	/*
-	 * Leetcode Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-	 * Explanation: https://takeuforward.org/data-structure/stock-buy-and-sell/
+	 * Topic: Best Time to Buy and Sell Stock III
+	 * TODO:
+	 * Leetcode: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+	 * description/
 	 */
-	static int maxProfit_1(int[] price, int n) {
+	static int maxProfit_3(int[] price, int n) {
 
-		int maxProfit = 0;
-		int minPrice = price[0];
+		return 0;
+	}
 
-		for (int i = 1; i < n; i++) {
-			minPrice = Math.min(minPrice, price[i]);
-			maxProfit = Math.max(maxProfit, price[i] - minPrice);
-		}
-		return maxProfit;
+	/* Main Function */
+	public static void main(String[] args) {
+
+		int[] price = { 1, 5, 3, 8, 12 };
+		// int[] price = { 7, 1, 5, 3, 6, 4 };
+		int n = price.length;
+
+		System.out.println(maxProfit_2(price, n));
 	}
 
 	/*

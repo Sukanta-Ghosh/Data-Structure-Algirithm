@@ -2,7 +2,18 @@ package Linked_List;
 
 import Linked_List.InsertingNode.ListNode;
 
-/* Qs: https://www.scaler.com/academy/mentee-dashboard/class/47550/assignment/problems/40?navref=cl_tt_lst_sl */
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ * public int val;
+ * public ListNode next;
+ * ListNode(int x) { val = x; next = null; }
+ * }
+ */
+/*
+ * Qs: https://www.scaler.com/academy/mentee-dashboard/class/47550/assignment/
+ * problems/40?navref=cl_tt_lst_sl
+ */
 public class ReverseLL {
     /*
      * T.C: O(n)

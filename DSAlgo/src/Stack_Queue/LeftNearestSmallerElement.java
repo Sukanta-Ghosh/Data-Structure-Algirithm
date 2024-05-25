@@ -8,7 +8,7 @@ public class LeftNearestSmallerElement {
      * T.C: O(n)
      * S.C: O(n)
      */
-    public int[] prevSmaller(int[] A) {
+    public static int[] prevSmaller(int[] A) {
         int n = A.length;
         int[] ans = new int[n];
         Stack<Integer> st = new Stack<Integer>();
@@ -16,8 +16,8 @@ public class LeftNearestSmallerElement {
         for (int i = 0; i < n; i++) {
             /*
              * if stack peek element is greater than or equal to
-             * array ele, then pop stack ele till
-             * stack peek ele is less than array ele
+             * array element, then pop stack element till
+             * stack peek element is less than array element
              */
             while (!st.empty() && st.peek() >= A[i]) {
                 st.pop();
@@ -40,5 +40,10 @@ public class LeftNearestSmallerElement {
         }
 
         return ans;
+    }
+
+    public static void main(String[] args) {
+        int[] A = { 4, 5, 2, 10, 8 };
+        prevSmaller(A); // [-1, 4, -1, 2, 2]
     }
 }

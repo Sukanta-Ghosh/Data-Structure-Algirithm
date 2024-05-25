@@ -1,15 +1,31 @@
 package Arrays;
 
 /* Practise Link
+https://www.scaler.com/academy/mentee-dashboard/class/40552/assignment/problems/11921/?navref=cl_pb_nv_tb
 https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1 */
-
 public class LeadersInArray {
-
 	/*
 	 * Question Statement: Given an array A of positive integers. Find the leaders
 	 * in the array. An element of array is leader if it is greater than or equal to
 	 * all the elements to its right side. The rightmost element is always a leader.
 	 */
+
+	// Method 2 : Efficient
+	// Time Complexity: O(n)
+	// Space Complexity: O(1)
+	static void leadersEfficient(int[] arr, int n) {
+
+		// n th element is currentLeader element
+		int currentLeader = arr[n - 1];
+
+		// Loop through n - 2 to 0 and update leader array
+		for (int i = n - 2; i >= 0; i--) {
+			if (currentLeader < arr[i]) {
+				currentLeader = arr[i];
+				System.out.println(arr[i] + " ");
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 
@@ -17,22 +33,6 @@ public class LeadersInArray {
 		int n = arr.length;
 
 		leadersEfficient(arr, n); // 2 5 6 10
-	}
-
-	// Method 2 : Efficient
-	// Time Complexity: O(n)
-	// Auxiliary Space: O(1)
-	static void leadersEfficient(int[] arr, int n) {
-
-		int currentLeader = arr[n - 1];
-		System.out.print(currentLeader + " ");
-
-		for (int i = n - 2; i >= 0; i--) {
-			if (currentLeader < arr[i]) {
-				currentLeader = arr[i];
-				System.out.print(arr[i] + " ");
-			}
-		}
 	}
 
 	// Method 1 : Naive

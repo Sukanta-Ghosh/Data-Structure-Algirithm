@@ -1,27 +1,34 @@
-## Data Structure & Algorithm
+## Data Structure & Algorithm: Pattern
 
 - Arrays
   - [ArrayRotation](DSAlgo/src/Arrays/ArrayRotation.java)
-  - [PrefixSum](DSAlgo/src/Arrays/PrefixSum.java)
-  - [MergeOverlappingIntervals](DSAlgo/src/Arrays/MergeOverLappingIntervals.java)
-    - [MergeIntervals](DSAlgo/src/Arrays/MergeIntervals.java)
-  - [Pick From Both Sides](DSAlgo/src/Arrays/PickFromBothSides.java)
-  - [Kadane Algorithm](DSAlgo/src/Arrays/MaximumSubarraySum.java)
-    - [Flip](DSAlgo/src/Arrays/Flip.java)
-    - [Maximum Positivity](DSAlgo/src/Arrays/MaximumPositivity.java)
-  - [Count Increasing Triplet](DSAlgo/src/Arrays/CoutingTriplets.java)
-    - [Length of consecutive ones](DSAlgo/src/Arrays/LenOfLongestConsOnes.java)
-    - Christmas Trees
+  - [Prefix Sum](DSAlgo/src/Arrays/PrefixSum.java)
+    - Equilibrium Point
+    - [Pick From Both Sides](DSAlgo/src/Arrays/PickFromBothSides.java)
+  - Carry Forward
+    - [Leaders In Array](DSAlgo/src/Arrays/LeadersInArray.java)
+    - [Closest Min Max](DSAlgo/src/Arrays/ClosestMinMax.java)
+  - Subarray
+    - [Kadane Algorithm](DSAlgo/src/Arrays/MaximumSubarraySum.java)
+      - [Maximum Circular Subarray Sum](DSAlgo/src/Arrays/MaximumCircularSubarraySum.java)
+      - [Maximum Positivity](DSAlgo/src/Arrays/MaximumPositivity.java)
+      - [Flip](DSAlgo/src/Arrays/Flip.java)
+    - [Sum of All Subarrays](DSAlgo/src/Arrays/SumofAllSubarray.java)
+  - [Sliding Window](DSAlgo/src/Arrays/WindowSlidingTechnique.java)
+    - [Minimum Swaps](DSAlgo/src/Arrays/MinimumSwaps.java)
+    - [Count Increasing Triplet](DSAlgo/src/Arrays/CoutingTriplets.java)
+      - [Length of consecutive ones](DSAlgo/src/Arrays/LongestConsecutiveOnes.java)
+      - Christmas Trees
   - [Majority Element](DSAlgo/src/Arrays/MajorityElement.java)
     - [N/3 Repeat Number](DSAlgo/src/Arrays/N3RepeatNo.java)
-  - [Special Index](DSAlgo/src/Arrays/SpecialIndex.java)
-  - [First Missing Integer](DSAlgo/src/Arrays/FirstMissingInteger.java)
+  - [MergeOverlappingIntervals](DSAlgo/src/Arrays/MergeOverLappingIntervals.java)
+    - [MergeIntervals](DSAlgo/src/Arrays/MergeIntervals.java)
   - [Rain Water Trapped](DSAlgo/src/Arrays/TrappingRainWater.java)
-  - [Next Permutation](DSAlgo/src/Arrays/NextPermutation.java)
+  - [Special Index](DSAlgo/src/Arrays/SpecialIndex.java)
+  - [Best Time to Buy and Sell Stock I & II & III](DSAlgo/src/Arrays/StockBuySell.java)
   - [Josephus Problem](DSAlgo/src/Arrays/JosephusProblem.java)
-  - [Closest Min Max](DSAlgo/src/Arrays/ClosestMinMax.java)
-  - [Maximum Subarray Sum](DSAlgo/src/Arrays/MaximumSubarraySum.java)
-  - [Minimum Swaps](DSAlgo/src/Arrays/MinimumSwaps.java)
+  - [First Missing Integer](DSAlgo/src/Arrays/FirstMissingInteger.java)
+  - [Next Permutation](DSAlgo/src/Arrays/NextPermutation.java)
   - Two Pointers
     - [Subarray with given sum](DSAlgo/src/Arrays/SubarrayTargetSum.java)
     - [Pairs with Given Difference](DSAlgo/src/Arrays/PairwithDiff.java)
@@ -31,32 +38,29 @@
     - [Closest pair from sorted arrays](DSAlgo/src/Arrays/ClosestPairSortedArr.java)
     - [Count Rectangle](DSAlgo/src/Arrays/CountRectangle.java)
     - [Max Continuous Series of 1s](DSAlgo/src/Arrays/MaxContinuousSeriesOne.java)
+- Sorting
+  - [Custom Sorting Class](DSAlgo/src/Sorting/Compare.java)
+  - [Merge 2 Sorted Arrays](DSAlgo/src/Sorting/MergeSortedArrays.java)
+  - [Kth Smallest Element](DSAlgo/src/Sorting/KthSmallestElement.java)
+  - [Inversion count in an array](DSAlgo/src/Sorting/InversionCountinArray.java)
+- Maths
+  - [GCD and LCM](DSAlgo/src/Number_Theory/GCDandLCM.java)
+  - [Prime Factors](DSAlgo/src/Number_Theory/PrimeFactors.java)
+  - [Prime Number upto N](DSAlgo/src/Number_Theory/SieveOfEratosthenes.java)
 - String
-- Stack & Queue
-  - Stack
-    - [Balanced Paranthesis](DSAlgo/src/Stack_Queue/BalancedParanthesis.java)
-    - [Double Character Trouble](DSAlgo/src/Stack_Queue/DoubleCharacter.java)
-    - [Passing Game](DSAlgo/src/Stack_Queue/PassingGame.java)
-    - [Redundant Braces](DSAlgo/src/Stack_Queue/RedundantBraces.java)
-    - [Infix to Postfix](DSAlgo/src/Stack_Queue/InfixToPostfix.java)
-    - [Left Nearest Smaller Element](DSAlgo/src/Stack_Queue/LeftNearestSmallerElement.java)
-    - [Largest Rectangle in Histogram](DSAlgo/src/Stack_Queue/LargestRectangleHistogram.java)
-    - [MAX and MIN Subarray](DSAlgo/src/Stack_Queue/MaxMinDiffSubarray.java)
-    - [Sort stack using another stack](DSAlgo/src/Stack_Queue/SortStackUsingStack.java)
-  - Queue
-    - [Perfect Number](DSAlgo/src/Stack_Queue/PerfectNumber.java)
-    - [First non-repeating character](DSAlgo/src/Stack_Queue/FirstNonRepeatChar.java)
-    - [Sliding Window Maximum](DSAlgo/src/Stack_Queue/SlidingWindowMaximum.java)
+  - [Longest Common Prefix](DSAlgo/src/string/LongestCommonPrefix.java)
 - Hashing
   - [Longest Consecutive Sequence](DSAlgo/src/Hashing/LongestConsecutiveSequence.java)
-  - [Count Subarrays](DSAlgo/src/Hashing/CountSubarray.java)
+  - Subarray
+    - [Subarray Sums Divisible by K](DSAlgo/src/Hashing/SubarraySumDivisibleByK.java)
+    - [Sub-array with 0 sum](DSAlgo/src/Hashing/SubArrayZeroSum.java)
+    - [Count Subarrays](DSAlgo/src/Hashing/CountSubarray.java)
   - [MinDistancePair](DSAlgo/src/Hashing/MinDistancePair.java)
-  - [Sub-array with 0 sum](DSAlgo/src/Hashing/SubArrayZeroSum.java)
   - [Sort Array in given Order](DSAlgo/src/Hashing/SortByGivenOrder.java)
   - [Colorful Number](DSAlgo/src/Hashing/ColorfulNumber.java)
 - Binary Search
   - [Peak Element](DSAlgo/src/BinarySearch/PeakElement.java)
-  - [Search Range](DSAlgo/src/BinarySearch/PeakElement.java)
+  - [Search Range](DSAlgo/src/BinarySearch/SearchRange.java)
   - [Single Element in Sorted Array](DSAlgo/src/BinarySearch/SingleElementSortedArray.java)
   - [Matrix Search](DSAlgo/src/BinarySearch/MatrixSearch.java)
   - [Maximum height of staircase](DSAlgo/src/BinarySearch/MaxStairHeight.java)
@@ -68,23 +72,36 @@
   - BS on answer
     - [Painter's Partition](DSAlgo/src/BinarySearch/PainterPartition.java)
       - [Aggresive Cows](DSAlgo/src/BinarySearch/AggresiveCows.java)
-- Linked List
-- Sorting
-  - [Custom Sorting Class](DSAlgo/src/Sorting/Compare.java)
-  - [Kth Smallest Element](DSAlgo/src/Sorting/KthSmallestElement.java)
-  - [Inversion count in an array](DSAlgo/src/Sorting/InversionCountinArray.java)
-- Tree
+- Stack & Queue
+  - Stack
+    - [Balanced Paranthesis](DSAlgo/src/Stack_Queue/BalancedParanthesis.java)
+    - [Double Character Trouble](DSAlgo/src/Stack_Queue/DoubleCharacter.java)
+    - [Left Nearest Smaller Element](DSAlgo/src/Stack_Queue/LeftNearestSmallerElement.java)
+    - [Largest Rectangle in Histogram](DSAlgo/src/Stack_Queue/LargestRectangleHistogram.java)
+    - [Passing Game](DSAlgo/src/Stack_Queue/PassingGame.java)
+    - [Redundant Braces](DSAlgo/src/Stack_Queue/RedundantBraces.java)
+    - [Infix to Postfix](DSAlgo/src/Stack_Queue/InfixToPostfix.java)
+    - [MAX and MIN Subarray](DSAlgo/src/Stack_Queue/MaxMinDiffSubarray.java)
+    - [Sort stack using another stack](DSAlgo/src/Stack_Queue/SortStackUsingStack.java)
+  - Queue
+    - [Perfect Number](DSAlgo/src/Stack_Queue/PerfectNumber.java)
+    - [First non-repeating character](DSAlgo/src/Stack_Queue/FirstNonRepeatChar.java)
+    - [Sliding Window Maximum](DSAlgo/src/Stack_Queue/SlidingWindowMaximum.java)
+- Heap
 
+  - [Min & Max Heap](DSAlgo/src/Heap/MinMaxHeapDefine.java)
+  - [Running Median](DSAlgo/src/Heap/MedianOfStream.java)
+  - [K Places Apart](DSAlgo/src/Heap/KPlacesApart.java)
+  - [Ath largest element](DSAlgo/src/Heap/AthLargestElement.java)
+
+- Linked List
+  - [Reverse Linked List](DSAlgo/src/Linked_List/ReverseLL.java)
+  - [Remove NthNode From End](DSAlgo/src/Linked_List/RemoveNthNodeFromEnd.java)
+  - [Reverse Linked List in Range](DSAlgo/src/Linked_List/ReverseLLRange.java)
+- Bit Manipulation
+  - [Invert Bits](DSAlgo/src/Bit/InvertBit.java)
 - [Dynamic Programming](DSAlgo/src/Dynamic_Programming_Library)
 
-  - No group
-    - [Min no of square](DSAlgo/src/Dynamic_Programming_Library/MinNoSquare.java)
-    - Max Sum Without Adjacent Elements
-    - [Maximum Sum Value](DSAlgo/src/Dynamic_Programming_Library/MaximumSumValue.java)
-    - [Max Product Subarray](DSAlgo/src/Dynamic_Programming_Library/MaxProductSubArray.java)
-    - [Ways To Decode](DSAlgo/src/Dynamic_Programming_Library/WaysToDecode.java)
-    - [Palindromic Substrings Count](DSAlgo/src/Dynamic_Programming_Library/PalindromicSubstringsCount.java)
-    - [Palindrome Partitioning](DSAlgo/src/Dynamic_Programming_Library/MinPalindromicCut.java)
   - [Fibonnaci](DSAlgo/src/Dynamic_Programming_Library/Fibonacci.java)
     - Stairs
   - [0-1 knapsack](DSAlgo/src/Dynamic_Programming_Library/Knapsack01.java)
@@ -106,14 +123,16 @@
   - [Catalan Number](DSAlgo/src/Dynamic_Programming_Library/CatalanNumber.java)
     - Intersecting Chords
     - Unique Binary Search Trees
+  - No group
+    - [Min no of square](DSAlgo/src/Dynamic_Programming_Library/MinNoSquare.java)
+    - Max Sum Without Adjacent Elements
+    - [Maximum Sum Value](DSAlgo/src/Dynamic_Programming_Library/MaximumSumValue.java)
+    - [Max Product Subarray](DSAlgo/src/Dynamic_Programming_Library/MaxProductSubArray.java)
+    - [Ways To Decode](DSAlgo/src/Dynamic_Programming_Library/WaysToDecode.java)
+    - [Palindromic Substrings Count](DSAlgo/src/Dynamic_Programming_Library/PalindromicSubstringsCount.java)
+    - [Palindrome Partitioning](DSAlgo/src/Dynamic_Programming_Library/MinPalindromicCut.java)
 
-- Heap
-
-  - [Min & Max Heap](DSAlgo/src/Heap/MinMaxHeapDefine.java)
-  - [Running Median](DSAlgo/src/Heap/MedianOfStream.java)
-  - [K Places Apart](DSAlgo/src/Heap/KPlacesApart.java)
-  - [Ath largest element](DSAlgo/src/Heap/AthLargestElement.java)
-
+- Tree
 - Divide & Conquer
 - Greedy Algorithm
   - [Fractional Knapsack](DSAlgo/src/Greedy_Algorithm/FractionalKnapsack.java)

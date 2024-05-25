@@ -11,53 +11,52 @@ public class MinimumSwaps {
         int n = A.length;
 
         // Count no of elements less than B(Good elements)
-        // K = good elements
-        int k = 0;
+        int goodElements = 0;
         for (int i = 0; i < n; i++) {
             if (A[i] <= B) {
-                k++;
+                goodElements++;
             }
         }
 
         /*
          * Edge Cases: NO Swaps required
-         * 1. K = 0, No good elements
-         * 2. k = 1, One good elements
-         * 3. k = n, All good elements
+         * 1. goodElements = 0, No good elements
+         * 2. goodElements = 1, One good elements
+         * 3. goodElements = n, All good elements
          */
-        if (k == 0 || k == 1 || k == n) {
+        if (goodElements == 0 || goodElements == 1 || goodElements == n) {
             return 0;
         }
 
-        // Caclulate no of bad elements for first window
-        int bad = 0;
-
-        for (int i = 0; i < k; i++) {
+        // Calculate no of bad elements for first window(size of goodElements)
+        int badElements = 0;
+        for (int i = 0; i < goodElements; i++) {
             if (A[i] > B) {
-                bad++;
+                badElements++;
             }
         }
 
         // Apply Sliding window teqn
-        int s = 1;
-        int e = k;
-        int swaps = bad;
+        int sIdx = 1;
+        int eIdx = goodElements;
+        int swaps = badElements;
 
-        while (e < n) {
-            // If new element is Bad, increase the count
-            if (A[e] > B) {
-                bad++;
+        while (eIdx < n) {
+            // If new element is greater, increase the badElements count
+            if (A[eIdx] > B) {
+                badElements++;
             }
 
-            // If old element is bad, decrease the count
-            if (A[s - 1] > B) {
-                bad--;
+            // If old element is greater, decrease the badElements count
+            if (A[sIdx - 1] > B) {
+                badElements--;
             }
 
-            swaps = Math.min(swaps, bad);
+            // Find min b/w all swaps
+            swaps = Math.min(swaps, badElements);
 
-            s++;
-            e++;
+            sIdx++;
+            eIdx++;
         }
 
         return swaps;

@@ -19,7 +19,11 @@ public class WindowSlidingTechnique {
         nbonacciseries(N, M); // O/p: 0 0 0 1 1 2 4 8 16 31 61 120 236 464
     }
 
-    /* Topic: QS: Maximum Sum of K Consecutive elements(Efficient) */
+    /*
+     * Topic: QS: Maximum Sum of K Consecutive elements(Efficient)
+     * T.C: O(n)
+     * S.C: O(1)
+     */
     static int maxSum(int arr[], int n, int k) {
         int curr_sum = 0;
 
@@ -31,6 +35,7 @@ public class WindowSlidingTechnique {
 
         // Using window sliding technique
         for (int i = k; i < n; i++) {
+            /* Include current element and exclude i - k the element */
             curr_sum += (arr[i] - arr[i - k]);
 
             // Finding max sum for every k elements
@@ -41,7 +46,7 @@ public class WindowSlidingTechnique {
     }
 
     /*
-     * Topic: QS: Find subarray with given sum || Returns true if
+     * Topic: QS: Find subarray with given sum. Returns true if
      * there is a subarray of arr[] with sum equal to 'sum' otherwise returns false.
      * Also, prints the result
      */
@@ -74,8 +79,8 @@ public class WindowSlidingTechnique {
     }
 
     /*
-     * Topic: QS: Function to print N-Bonacci series // Print first m
-     * numbers of N-bonacci numbers
+     * Topic: QS: Function to print N-Bonacci series
+     * Print first m numbers of N-bonacci numbers
      * Iterative Solution (Optimized Algorithm)
      * Time: O(m)
      * Space: O(m)

@@ -3,7 +3,8 @@ package BinarySearch;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/* Qs: https://www.scaler.com/test/668ffe7e04/#/problem_1 */
+/* Qs: https://leetcode.com/problems/3sum/description/
+ */
 public class ThreeSumZero {
     /*
      * Binary Search
@@ -22,11 +23,11 @@ public class ThreeSumZero {
         Collections.sort(A);
         int n = A.size();
 
-        /* Iterate through low */
+        /* Iterate from 0 to n - 2 */
         for (int low = 0; low < n - 2; low++) {
             int mid = low + 1;
             int high = n - 1;
-            int sum = -A.get(low);
+            int thirdNum = -A.get(low);
 
             /* Check for duplicate values, if found increase low index */
             if (low > 0 && A.get(low).intValue() == A.get(low - 1).intValue()) {
@@ -35,9 +36,9 @@ public class ThreeSumZero {
 
             // Binary Search
             while (mid < high) {
-                int num = A.get(mid) + A.get(high);
+                int twoNumSum = A.get(mid) + A.get(high);
 
-                if (num == sum) {
+                if (twoNumSum == thirdNum) {
                     /* Add elements to temp list array */
                     temp.add(A.get(low));
                     temp.add(A.get(mid));
@@ -51,11 +52,11 @@ public class ThreeSumZero {
                         mid++;
                     }
                 }
-                /* If mid + high sum is less than low index(sum) then increase mid */
-                else if (num < sum) {
+                /* If mid + high sum is less than low index(thirdNum) then increase mid */
+                else if (twoNumSum < thirdNum) {
                     mid++;
                 }
-                /* If mid + high sum is greater than low index(sum) then decrease high */
+                /* If mid + high sum is greater than low index(thirdNum) then decrease high */
                 else {
                     high--;
                 }

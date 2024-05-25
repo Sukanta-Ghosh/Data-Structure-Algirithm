@@ -15,20 +15,28 @@ public class CoutingTriplets {
          * L: No of elements less than arr[j] in 0 to j - 1
          * R: No of elements greater than arr[j] in j + 1 to n - 1
          */
-        int count = 0;
+        int increasingTripletCount = 0;
+        // j is middle element
         for (int j = 1; j < n - 1; j++) {
-            // j is middle element
-            int left = 0;
+            /*
+             * Find no of elements on left of j th element
+             * which are less than middle element
+             */
+            int noOfLeftElementsLessThanMiddle = 0;
             for (int i = j - 1; i >= 0; i--) {
                 if (A[i] < A[j]) {
-                    left++;
+                    noOfLeftElementsLessThanMiddle++;
                 }
             }
 
-            int right = 0;
+            /*
+             * Find no of elements on right of j th element
+             * which are greater than middle element
+             */
+            int noOfRightElementsGreaterThanMiddle = 0;
             for (int i = j + 1; i < n; i++) {
                 if (A[i] > A[j]) {
-                    right++;
+                    noOfRightElementsGreaterThanMiddle++;
                 }
             }
 
@@ -37,10 +45,10 @@ public class CoutingTriplets {
              * so left * right
              * Then add for total count
              */
-            count += (left * right);
+            increasingTripletCount += (noOfLeftElementsLessThanMiddle * noOfRightElementsGreaterThanMiddle);
         }
 
-        return count;
+        return increasingTripletCount;
     }
 
 }
